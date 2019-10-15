@@ -1,0 +1,368 @@
+#include<stdio.h>
+
+#include<string.h>
+
+#include<malloc.h>
+
+#include<stdlib.h>
+
+typedef struct
+
+{
+
+	char name[20];
+
+	char num[20];
+
+	double grade;
+
+
+}stu;
+
+typedef stu etype;
+
+
+typedef struct lnode
+
+{
+
+	etype data;
+
+	struct lnode*next;
+
+
+}lnode,*link;
+
+
+//构造空链表
+
+int init(link &l)
+
+{
+
+	l=(struct lnode*)malloc(sizeof(struct lnode));
+
+	l->next=NULL;
+
+	return 1;
+
+}
+
+
+//访问链表，找到i位置的数据域，返回给e
+
+int get(link l,int i,etype&e)
+
+{
+
+
+	link p;
+
+	int j;
+
+	p=l->next;
+
+	j=1;
+
+	while(p&&j<i)
+
+	{
+
+		p=l->next;
+
+		j++;
+
+
+	}
+
+	if(!p||j>i)
+
+	return 0;
+
+	else
+
+	e=p->data;
+
+	return 1;
+
+	
+
+}
+
+
+
+//录入个人信息
+void input(etype *e)
+
+{
+
+	printf("姓名:");
+
+	scanf("%s",e->name);
+
+	printf("学号:");
+
+	scanf("%s",e->num);
+
+	printf("成绩:");
+
+	scanf("%lf",&e->grade);
+
+
+
+}
+
+
+//在i位置插入某学生的信息
+
+int insert(link l,int i,etype e)
+
+{
+
+	link p,s;
+
+	p=l->next;
+
+	int j=1;
+
+	while(p&&j<i)
+
+	{
+
+		p=p->next;
+
+		j++;
+
+	}
+
+	if(!p||j>i)
+
+		return 0;
+
+	else
+	
+		s=(struct lnode*)malloc(sizeof(lnode));
+		
+s->data=e;
+
+		s->next=l->next;
+
+		l->next=s；
+
+		return 1;
+}
+
+//删除i位置的信息
+
+int del(link p,int i)
+
+{
+
+	link q;
+
+	
+int j=1;
+
+
+	while(p->next&&j<i)
+
+	{
+
+		p=p->next;
+
+		j++;
+
+	}
+
+	if(!p||j>i)
+
+		return 0;
+
+	else
+
+	
+	q=p->next ;
+
+	q->next=p->next;
+
+	p->next=q;
+
+	free(q);
+
+	return 1;
+
+}
+
+
+void output(etype*e)
+
+{
+
+	printf("姓名:%s\n学号:%s\n成绩:%lf\n",e->name,e->num,e->grade);
+
+}
+
+
+int main()
+
+{
+
+	int choose=-1,x;
+
+	etype a,b,c,d;
+
+	lnode l;
+
+	link p;
+
+	while(choose)
+
+	{
+
+		scanf("%d",&choose);
+
+		
+switch(choose)
+
+		{
+
+			case 1:
+
+				if(init(p))
+
+					printf("成功");
+
+				else
+
+					printf("失败");
+
+				break;
+
+			case 2:
+	printf("要输入的人数为:\n");
+
+				scanf("%d",&x);
+
+				int i;
+
+				for(i=1;i<=x;i++)
+
+				{
+
+					printf("第%d个学生的信息:\n",i);
+
+	
+				input(&a);
+
+					insert(&l,i,a);
+
+
+
+				}
+
+				break;
+
+			case 3:
+
+				printf("输出学生信息:\n");
+
+				for(i=1;i<=x;i++)
+
+				{
+
+					get(&l,i,b);
+
+					output(&b);
+
+				}
+
+				break;
+	
+			case 4:
+			
+	printf("请输入要查找的位置:");
+
+				int id;
+			
+	scanf("%d",&id);
+	
+				get(&l,id,c);
+
+				output(&c);
+			
+	break;
+
+
+			case 5:
+			
+	int id1;
+	
+				printf("输入要插入的位置:\n");
+
+				scanf("%d",&id1);
+
+				printf("请输入插入学生的信息:\n");
+
+				input(&d);
+				
+if(insert(&l,id1,d))
+				
+{
+				
+	x++;
+
+					puts("插入成功");
+				
+}
+				
+else
+				
+
+{
+				
+	puts("插入完成");
+					
+puts("");
+				
+}
+				
+break;
+			
+case 6:
+			
+	int id2;
+
+				printf("输入要删除的位置:\n");
+
+				scanf("%d",&id2);
+
+				if(del(&l,id2))
+
+					puts("删除成功");
+
+				else
+					puts("删除失败");
+
+				puts("");
+
+				break;
+			
+	return 0;
+	
+
+
+
+
+
+
+
+
+					
+
+					
+		
+		}
+
+	}
+
+}
