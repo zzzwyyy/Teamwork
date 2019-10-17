@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>干部一览表</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+	<table frame="border" border="1" rules="all" bgcolor="#d6ecf0">
+		<thead>
+			<tr>
+				<td colspan="6" align="center">干部一览表</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td colspan="2">班长：</td>
+				<td colspan="4">副班长：</td>
+			</tr>
+			<tr>
+				<td>学习委员：</td>
+				<td colspan="3">劳动委员：</td>
+				<td colspan="2">生活委员：</td>
+			</tr>
+			<tr>
+				<td colspan="2">体育委员：</td>
+				<td colspan="4">其他委员：</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td rowspan="2">组长</td>
+				<td>第一组</td>
+				<td>第二组</td>
+				<td>第三组</td>
+				<td>第四组</td>
+				<td>第五组</td>
+			</tr>
+			<tr height="30px">
+				<td>     </td>
+				<td>     </td>
+				<td>     </td>
+				<td>     </td>
+				<td>     </td>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+</html>
