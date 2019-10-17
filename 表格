@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>表格</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+	 
+      <table border="1" width="800px" bgcolor="d9ffff" cellspacing="0" cellpadding="5px" align="center">
+      	<caption align="center">干部一览表</caption>
+		  <thead>
+		    <tr>
+		      <th colspan="7">干部一览表</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		      <td colspan="3">正班长:</td>
+		      <td colspan="4"  align="center">副班长:</td>
+		    </tr>
+		    <tr>
+		      <td colspan="2">学习委员：</td>
+		      <td colspan="3" align="center">劳动委员：</td>
+		      <td colspan="2" align="center">生活委员：</td>
+		    </tr>
+		    <tr>
+		      <td colspan="3">体育委员：</td>
+		      <td colspan="4" align="center">其他委员：</td>
+		    </tr>
+		    <tr>
+		      <td colspan="2" rowspan="2" align="center">组长</td>
+		      <td align="center">第一组</td>
+		      <td align="center">第二组</td>
+		      <td align="center">第三组</td>
+		      <td align="center">第四组</td>
+		      <td align="center">第五组</td>
+		    </tr>
+		    <tr>
+		      <td height="20px"></td>
+		      <td></td>
+		      <td></td>
+		      <td></td>
+		      <td></td>
+		    </tr>
+		  </tbody>
+	   </table>
+</body>
+
+</html>
