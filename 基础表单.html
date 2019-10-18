@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>基础表单</title>	
+	<meta http-equiv="Content-Type"  contect= " text/html;charset=utf-8"/>
+</head>
+
+<body bgcolor="F0FFFF">
+	<h1 align="center">皮皮科技-人才招聘注册信息</h1>
+	<hr color="33ccff">
+<form>
+	<table border="0" width="500px" cellpadding="0" cellspacing="15" align="center">
+		<tr>
+			<td>姓名：</td>
+			<td><input type="text" name="mingzi"/></td>
+		</tr>
+
+		<tr>
+			<td>邮箱：</td>
+			<td><input type="text" name="email" value="@qq.com" /></td>
+		</tr>
+
+		<tr>
+			<td>密码：</td>
+			<td><input type="password" name="key" placeholder="6位数字" /></td>
+		</tr>
+
+		<tr>
+			<td>确认密码：</td>
+			<td><input type="password" name="key" placeholder="再输入一次" /></td>
+		</tr>
+
+		<tr>
+			<td>上传证件照：</td>
+			<td><input type ="file" name="file" /> </td>
+		</tr>
+
+		<tr>
+			<td>性别：</td>
+			<td>
+				男<input type="radio" name="sex"/>
+				女<input type="radio" name="sex"/>
+				不明<input type="radio" name="sex" checked/>
+			</td>
+		</tr>
+
+		<tr>
+			<td>籍贯：</td>
+			<td>
+				请选择:
+				<select>
+					<option>--请选择--</option>
+					<option>津京冀</option>
+					<option>江浙沪</option>
+					<option>陕甘宁</option>
+					<option>黑辽吉</option>
+				</select>
+			</td>
+		</tr>
+
+		<tr>
+			<td>爱好：</td>
+			<td>
+				唱歌<input type="checkbox" name="habbit" checked/>
+				跳舞<input type="checkbox" name="habbit" />
+				表演<input type="checkbox" name="habbit" />
+			</td>
+		</tr>
+			
+		<tr>
+			<td>体育爱好：</td>
+			<td>
+				篮球<input type="checkbox" name="habbit" checked/>
+				足球<input type="checkbox" name="habbit" />
+				乒乓球<input type="checkbox" name="habbit" />				
+			</td>	
+		</tr>
+
+		<tr>
+			<td>简历：</td>	
+			<td>
+				<textarea placeholder="你有什么经历，获过什么奖" rows="6" cols="40"></textarea>
+
+			</td>
+		</tr>
+	</table>
+	<table border="0" width="500px" cellpadding="0" cellspacing="15" align="center">
+		<tr>
+			<td><input type="button" name="try" value="点我点我"></td>
+			<td><input type="submit" name="allok"></td>
+			<td><input type="reset" name="rewirte"></td>
+		</tr>
+
+	</table>
+</form>
+</body>
+</html>
