@@ -1,0 +1,586 @@
+                body {
+                    margin: 0;
+                    padding: 0;
+                    max-height: 90%;
+                    /* overflow-y: scroll; */
+                    overflow-x: hidden;
+                    overflow-y: auto;
+                    width: 100%;
+                }
+                
+                .clearfix::after,
+                .clearfix::before {
+                    content: "";
+                    display: table;
+                }
+                
+                .clearfix::after {
+                    clear: both;
+                }
+                
+                .clearfix {
+                    *zoom: 1;
+                }
+                
+                ul {
+                    list-style: none;
+                }
+                
+                a {
+                    text-decoration: none;
+                }
+                
+                .topbox {
+                    width: 100%;
+                    height: 170px;
+                    overflow: hidden;
+                    background-color: #014a95;
+                    padding: 0;
+                    margin: 0;
+                }
+                
+                .img1 {
+                    margin-left: 200px;
+                    margin-bottom: 45px;
+                }
+                
+                .top-right-fr {
+                    width: 785px;
+                    height: 130px;
+                    padding-top: 40px;
+                    background: url(../img/topbg.jpg) left bottom no-repeat;
+                    display: inline-block;
+                }
+                /* position: relative; */
+                /* .top-right-fr-li li img {
+float: right;
+/* position: absolute;
+left: 5px; */
+                
+                .top-right-fr-li li {
+                    float: right;
+                    padding: 0 12px;
+                }
+                
+                .top-right-fr-li a {
+                    font-size: 14px;
+                    color: #fff;
+                }
+                
+                .container {
+                    height: 50px;
+                    width: 400px;
+                    float: right;
+                    margin-top: 40px;
+                    position: relative;
+                }
+                
+                .search {
+                    width: 200px;
+                    height: 30px;
+                    border-radius: 18px;
+                    outline: none;
+                    border: 1px solid #ccc;
+                    padding-left: 15px;
+                    float: right;
+                }
+                
+                .container img {
+                    position: absolute;
+                    width: 23px;
+                    height: 23px;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    left: 360px;
+                    top: 5px;
+                }
+                /* 导航栏 */
+                
+                .topnav {
+                    width: 100%;
+                    overflow: hidden;
+                    background-color: #ffffff;
+                    margin: 0;
+                }
+                
+                .topnav li a {
+                    float: left;
+                    font-size: 16px;
+                    color: black;
+                    padding: 0 15px;
+                    line-height: 50px;
+                    text-align: center;
+                    position: relative;
+                }
+                
+                .topnav ul li .first {
+                    padding-left: 200px;
+                }
+                
+                a:hover em {
+                    display: block;
+                    position: absolute;
+                    left: 26px;
+                    /*(a的宽度-em的宽度)/2*/
+                    top: -20px;
+                    /*em自身边框宽度的二倍*/
+                    border-width: 10px;
+                    border-style: solid;
+                    border-color: transparent transparent #014a95;
+                    /*transparent 用来指定全透明色彩*/
+                }
+                /* 中间轮播图实现 */
+                
+                #parent {
+                    position: relative;
+                    margin: 0 auto;
+                    padding: 0;
+                    width: 1700px;
+                    height: 600px;
+                    overflow: hidden;
+                }
+                
+                #uls {
+                    position: relative;
+                    margin: 0;
+                    padding: 0;
+                    width: 1700px;
+                    height: 600px;
+                    overflow: hidden;
+                }
+                
+                #img_ul {
+                    position: absolute;
+                    margin: 0;
+                    padding: 0;
+                    left: 0;
+                    top: 0;
+                    width: 10800px;
+                    /*多留出一张图片的宽度！*/
+                    list-style: none;
+                }
+                
+                #img_ul li {
+                    float: left;
+                    margin: 0;
+                    padding: 0;
+                    width: 1700px;
+                    height: 600px;
+                }
+                
+                #img_ul li img {
+                    width: 1700px;
+                    height: 600px;
+                }
+                
+                #litCir_ul {
+                    position: absolute;
+                    margin: 0;
+                    padding: 0;
+                    right: 10px;
+                    bottom: 10px;
+                    list-style: none;
+                }
+                
+                #litCir_ul li {
+                    margin: 0;
+                    padding: 0;
+                    float: left;
+                }
+                
+                li.active {
+                    background-color: white;
+                }
+                
+                li.quiet {
+                    background-color: #1e90ff;
+                }
+                
+                #buttons {
+                    margin: 0;
+                    padding: 0;
+                    display: none;
+                }
+                
+                #buttons span {
+                    position: absolute;
+                    width: 50px;
+                    height: 90px;
+                    top: 50%;
+                    line-height: 90px;
+                    text-align: center;
+                    font-weight: bold;
+                    font-family: Simsun;
+                    font-size: 30px;
+                    border: 1px solid #fff;
+                    opacity: 0.3;
+                    cursor: pointer;
+                    color: #fff;
+                    background: black;
+                }
+                
+                #left {
+                    left: 0px;
+                }
+                
+                #right {
+                    right: 180px;
+                    opacity: 0.3;
+                }
+                /* 信息部分 */
+                
+                .MiddleBox {
+                    margin-top: 0;
+                    width: 1260px;
+                    margin-left: 120px;
+                }
+                
+                .rbrright {
+                    width: 400px;
+                }
+                
+                .middlebox,
+                .leftbox,
+                .rightbox {
+                    display: inline-block;
+                    width: 400px;
+                    float: left;
+                    padding: 0 10px;
+                }
+                
+                .leftbox-topbox {
+                    width: 400px;
+                    height: 100px;
+                    border-bottom: 2px solid #014a95;
+                }
+                
+                .leftbox-topbox img {
+                    vertical-align: middle;
+                }
+                
+                .leftbox-topbox h2 {
+                    display: inline;
+                    line-height: 100px;
+                    font-weight: 500;
+                    font-size: 20px;
+                }
+                
+                .leftbox-topbox div li {
+                    margin-top: 0;
+                    left: 0;
+                }
+                
+                .leftbox-topbox div {
+                    height: inherit;
+                    float: right;
+                    line-height: inherit;
+                }
+                
+                .leftbox-topbox a {
+                    color: #4a5b6d;
+                    font-size: 13px;
+                    line-height: 100px;
+                    margin-top: 0;
+                    margin-right: 0px;
+                }
+                
+                #liebiao li {
+                    font-size: 16px;
+                    height: 39px;
+                    line-height: 39px;
+                    margin-bottom: 6px;
+                    border-bottom: 1px dashed #cfcfcf;
+                    color: #333;
+                }
+                
+                #liebiao a {
+                    color: #333;
+                }
+                
+                #teshu a {
+                    color: #333;
+                }
+                /* #liebiao a {
+                        display: inline-flex;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        text-align: -webkit-match-parent;
+                    } */
+                /*                     
+                    .MiddleBox #liebiao ul li span {
+                        float: right;
+                        font-size: 14px;
+                        color: #808080;
+                        right: 0;
+                    } */
+                
+                #liebiao span {
+                    float: right !important;
+                    font-size: 14px !important;
+                    color: #808080 !important;
+                    float: right !important;
+                }
+                
+                #teshu img {
+                    margin-left: 0;
+                }
+                
+                #teshu li {
+                    font-size: 16px;
+                    height: 60px;
+                    margin-bottom: 8px;
+                    line-height: 60px;
+                    border-bottom: 1px dashed #cfcfcf;
+                    color: #333;
+                    background: #e5edf4 url(http://www.xiyou.edu.cn/newWeb/images/xy_img_42.png) right bottom no-repeat;
+                }
+                /* 教务信息部分 */
+                
+                .smart {
+                    width: 100%;
+                    border: 1px solid #000;
+                    height: 200px;
+                    background-image: url(http://www.xiyou.edu.cn/newWeb/images/kuijieBG_23.png);
+                    background-size: 1900px 200px;
+                    background-repeat: no-repeat;
+                }
+                
+                .smart .sbox div {
+                    width: 104px;
+                    height: 104px;
+                    font-size: 14px;
+                    color: #fff;
+                    text-align: center;
+                    float: left;
+                    border-radius: 50%;
+                    line-height: 130px;
+                    margin-right: 60px;
+                    border: 1px #fff solid;
+                    vertical-align: bottom;
+                }
+                
+                .smart .sbox div:hover {
+                    background-image: url(http://www.xiyou.edu.cn/newWeb/images/xy_kuijie_25H.png);
+                    color: #014a95;
+                }
+                
+                .smart .sbox {
+                    margin-left: 120px;
+                }
+                
+                .sbox {
+                    margin-top: 50px;
+                }
+                /* 通知公告部分 */
+                
+                .left-liebiao li {
+                    font-size: 16px;
+                    height: 40px;
+                    line-height: 40px;
+                    margin-bottom: 6px;
+                    color: #333;
+                    white-space: nowrap;
+                }
+                
+                .left-liebiao li a {
+                    font-size: 16px;
+                    padding: 10px;
+                    color: #333;
+                }
+                
+                .left-liebiao b {
+                    color: #014a95;
+                    font-size: 24px;
+                    word-wrap: break-word;
+                    font-weight: normal;
+                    font-style: normal;
+                }
+                /* 中间的盒子 */
+                
+                #comMid li {
+                    height: 56px;
+                    margin-top: 24px;
+                }
+                
+                #comMid li .date-time {
+                    float: left;
+                    width: 66px;
+                    height: 51px;
+                    background: #e5edf4;
+                    text-align: center;
+                    color: #014a95;
+                }
+                
+                #comMid li .date-time .date-d {
+                    height: 32px;
+                    line-height: 32px;
+                    font-size: 24px;
+                    display: block;
+                    color: #014a95;
+                    text-align: center;
+                }
+                
+                #comMid li .date-time .date-d2 {
+                    height: 24px;
+                    line-height: 24px;
+                    font-size: 14px;
+                    display: block;
+                }
+                
+                #comMid li .tit-info {
+                    display: block;
+                    width: 250px;
+                    float: left;
+                    padding-left: 15px;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+                
+                #comMid li .tit-info .tit-z {
+                    line-height: 32px;
+                    font-size: 16px;
+                    color: #014a95;
+                }
+                
+                #comMid li .tit-info .tit-y {
+                    font-size: 14px;
+                    color: #4c4c4c;
+                }
+                
+                #comMid li :hover {
+                    background-color: #e5edf4;
+                }
+                
+                #comMid-u8 {
+                    padding-top: 26px;
+                    padding-bottom: 10px;
+                    width: 389px;
+                    height: 205px;
+                    display: block;
+                }
+                
+                #comMid-u8 li {
+                    margin-top: 5px;
+                    float: left;
+                    margin-right: 12px;
+                    width: 173px;
+                    height: 48px;
+                    line-height: 48px;
+                    background: #f5f5f5;
+                }
+                
+                #comMid-u8 li img {
+                    margin-left: 30px;
+                    vertical-align: middle;
+                }
+                
+                #comMid-u8 li a {
+                    color: #014a95;
+                }
+                
+                .comMid-u8-img {
+                    float: right;
+                }
+                
+                .xy-infor {
+                    background-color: #e6e6e6;
+                    width: 100%;
+                    height: 315px;
+                    margin-top: 40px;
+                    border: 1px solid #e6e6e6;
+                    overflow: hidden;
+                }
+                
+                .xq-infor {
+                    width: 370px;
+                    margin-top: 40px;
+                    margin-left: 120px;
+                    float: left;
+                }
+                
+                .xqstyle li:first-child {
+                    font-size: 16px;
+                    color: #000000;
+                    border-left: 5px solid #014a95;
+                    padding-left: 7px;
+                    margin-bottom: 15px;
+                    height: 21px;
+                    line-height: 21px;
+                }
+                
+                .xq-infor .YanTa ul li,
+                .xq-infor .ChangAn ul li {
+                    height: 24px;
+                    line-height: 24px;
+                    font-size: 14px;
+                    color: #808080;
+                }
+                
+                .ChangAn {
+                    margin-top: 20px;
+                }
+                
+                .xy-icon {
+                    width: 350px;
+                    height: 220px;
+                    margin-top: 40px;
+                    float: left;
+                    margin-left: 100px;
+                    border-left: 1px solid #ccc;
+                    border-right: 1px solid #ccc;
+                }
+                
+                .xy-icon img {
+                    margin-top: 20px;
+                    margin-left: 20px;
+                }
+                
+                #rightbox {
+                    width: 380px;
+                    height: 288px;
+                    float: left;
+                    margin-top: 40px;
+                    margin-left: 50px;
+                    ;
+                }
+                
+                #rightbox .icode,
+                .icode2 {
+                    float: left;
+                    margin-left: 42px;
+                    margin-top: 10px
+                }
+                
+                .select {
+                    margin-left: 50px;
+                    background-color: #fff;
+                    width: 200px;
+                    text-align: center;
+                    height: 35px;
+                }
+                
+                .select form select {
+                    height: 35px;
+                    width: 200px;
+                    display: block;
+                }
+                
+                .select option {
+                    text-align: center;
+                    display: block;
+                }
+                
+                .footerbox {
+                    width: 100%;
+                    height: 58px;
+                    background-color: #014a95;
+                }
+                
+                .foot {
+                    height: 58px;
+                    line-height: 58px;
+                    text-align: center;
+                    font-size: 16px;
+                    color: #fff;
+                }
