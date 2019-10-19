@@ -249,6 +249,16 @@ left: 5px; */
                     padding: 0 10px;
                 }
                 
+                #liebiao ul,
+                .liebiao ul,
+                #teshu ul,
+                .leftbox ul,
+                .rightbox ul,
+                .middlebox ul {
+                    margin: 0;
+                    padding: 0;
+                }
+                
                 .leftbox-topbox {
                     width: 400px;
                     height: 100px;
@@ -480,7 +490,7 @@ left: 5px; */
                 }
                 
                 .comMid-u8-img {
-                    float: right;
+                    float: left;
                 }
                 
                 .xy-infor {
