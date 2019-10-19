@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>表格hhh</title>
+</head>
+
+<body>
+<table bgcolor="#99CC00" align="center"  cellpadding="20" cellspacing="1" bordercolor="#000000" width="600px" height="100px" frame="hsides" rules="all"><caption>菜鸡发言</caption>
+<thead>
+<tr align="center" bordercolor="#999900">
+    <th align="center" colspan="6">干部一览表</th>
+</tr>
+</thead>
+<tbody>
+<tr align="center">
+    <td colspan="3" width="180">正班长</td>
+    <td colspan="3">副班长</td>
+</tr>
+<tr align="center">
+    <td colspan="2">学习委员</td>
+    <td colspan="2">劳动委员</td>
+    
+    
+    <td colspan="2">生活委员</td>
+</tr>
+</tbody>
+<tr align="center">
+    <td colspan="3">体育委员</td>
+ 
+    <td colspan="3">其他委员</td>
+   
+</tr>
+<tr>
+    <td colspan="1.5" rowspan="2">组长</td>
+    
+    <td>第一组</td>
+    <td>第二组</td>
+    <td>第三组</td>
+     <td>第四组</td>
+    <td>第五组</td>
+
+</tr>
+<tr>
+    <td> <pre>    </pre></td>
+    <td>  </td>
+    <td>  </td>
+    <td>  </td>
+    <td>  </td>
+
+
+</tr>
+
+</table>
+</body>
+</html>
