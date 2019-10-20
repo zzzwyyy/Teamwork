@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>体会动画</title>
+    <style>
+        img {
+            animation: go 2s infinite;
+        }
+        
+        @keyframes go {
+            0% {
+                transform: translate3d(0px);
+            }
+            50% {
+                transform: translateX(1000px);
+            }
+            51% {
+                transform: translateX(1000px) rotateY(180deg);
+            }
+            100% {
+                transform: translateX(0px) rotateY(180deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <img src="http://img5.imgtn.bdimg.com/it/u=57682078,1446788335&fm=26&gp=0.jpg" alt="" width="200">
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>开门</title>
+    <style>
+        section {
+            margin: 100px auto;
+            width: 400px;
+            height: 300px;
+            background: url(../img/dog.jpg) no-repeat;
+            position: relative;
+            perspective: 1000px;
+        }
+        
+        .box-r,
+        .box-l {
+            width: 200px;
+            height: 300px;
+            background: aquamarine;
+            border: 1px solid #000;
+            transition: all 0.5s;
+        }
+        
+        .box-l {
+            position: absolute;
+            left: 0;
+            transform-origin: left;
+        }
+        
+        .box-r {
+            position: absolute;
+            right: 0;
+            transform-origin: right;
+        }
+        
+        .box-l::before,
+        .box-r::before {
+            content: " ";
+            position: absolute;
+            top: 50%;
+            width: 20px;
+            height: 20px;
+            border: 1px solid #000;
+            border-radius: 50%;
+            transform: translateY(-50%);
+        }
+        
+        .box-l::before {
+            right: 5px;
+        }
+        
+        .box-r::before {
+            left: 10px;
+        }
+        
+        section:hover .box-l {
+            transform: rotateY(-160deg);
+        }
+        
+        section:hover .box-r {
+            transform: rotateY(160deg);
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="box-r"></div>
+        <div class="box-l"></div>
+    </section>
+</body>
+
+</htm

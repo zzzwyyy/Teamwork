@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>无缝滚动</title>
+    <style>
+        img {
+            width: 200px;
+            height: 200px;
+        }
+        
+        nav {
+            margin: 100px auto;
+            width: 800px;
+            overflow: hidden;
+        }
+        
+        ul {
+            width: 200%;
+            list-style: none;
+            animation: go 2s linear infinite;
+        }
+        
+        ul li {
+            float: left;
+        }
+        
+        @keyframes go {
+            form {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-800px);
+            }
+        }
+        
+        nav:hover ul {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><img src="../img/bg1.jpg" alt=""></li>
+            <li><img src="../img/bg2.jpg" alt=""></li>
+            <li><img src="../img/bg3.jpg" alt=""></li>
+            <li><img src="../img/dog.jpg" alt=""></li>
+            <li><img src="../img/bg1.jpg" alt=""></li>
+            <li><img src="../img/bg2.jpg" alt=""></li>
+            <li><img src="../img/bg3.jpg" alt=""></li>
+            <li><img src="../img/dog.jpg" alt=""></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
