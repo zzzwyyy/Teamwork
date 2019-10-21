@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 align="center"><font size="5"><ins>请留下个人资料</ins></font></h1>
+    <form>
+        <table align="center">
+            <tr>
+                <td align="right">姓名：</td>
+                <td><input size="30" type="text" name="username" maxlength="5"/></td>
+            </tr>
+            <tr>
+                <td align="right">电话：</td>
+                <td><input size="40" type="text" name="phonenumber" maxlength="11"/></td>
+            </tr>
+            <tr>
+                <td align="right">E-mail：</td>
+                <td><input size="50" type="text" name="mail" value="@163.com""/></td>
+            </tr>
+            <tr>
+                <td align="right">性别：</td>
+                <td><input type="radio" name="sex" value="man"/>男
+                    <input type="radio" name="sex" value="woman"/>女
+                </td>
+            </tr>
+            <tr>
+                    <td align="right">年龄：</td>
+                    <td>
+                        <select>
+                            <option value="choice">--请选择--</option>
+                            <option value="down">20以下</option>
+                            <option value="middle">20</option>
+                            <option value="up">20以上</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                        <td align="right">留言板：</td>
+                        <td><textarea name="ly" rows="3" cols="60" placeholder="可不填写"></textarea>
+                        </td>
+                </tr>
+            <tr>
+                <td align="right">您的爱好：</td>
+                <td><input type="checkbox" name="dx1" value="sport" checked/>运动
+                    <input type="checkbox" name="dx1" value="read"/>阅读</br>
+                    <input type="checkbox" name="dx1" value="music"/>听音乐
+                    <input type="checkbox" name="dx1" value="trip"/>旅游
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" name="submit" value="提交"/>
+                    <input type="reset" name="reset" value="全部重写"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
