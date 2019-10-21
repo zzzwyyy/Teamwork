@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>表单input</title>
+</head>
+<body>
+ <h1 align="center">请留下个人信息</h1>
+ <hr color="#336699"/>
+ <form>
+  <table width="600px" bgcolor="white" align="center" >
+  		<tr>
+  			<td align="right">姓名:</td>
+  			<td align="left"><input type="text" name="username" maxlength="5"/></td>
+  		</tr>
+  		<tr>
+  			<td align="right">电话:</td>
+  			<td align="left"><input type="text" name="tel" maxlength="11"/></td>
+  		</tr>
+  		<tr>
+  			<td align="right">E-mail:</td>
+  			<td align="left"><input type="text" name="email" value="@163.com"/></td>
+  		</tr> 
+  		<tr>
+  			<td align="right">性别:</td>
+  			<td align="left">男<input type="radio" name="sex1" checked/>女<input type="radio" name="sex1" /></td>
+  		</tr> 
+  		<tr>
+  			<td align="right">年龄:</td>
+  			<td align="left">
+  				<select>
+  					<option>20以下</option>
+  					<option>20以上</option>
+  				</select>
+  			</td>
+  		</tr>
+  		<tr>
+  			<td align="right">留言板:</td>
+  			<td align="left" width="25px"><textarea name="lyb" placeholder="可不填写" ></textarea></td>
+  		</tr>	
+  		<tr>
+  			<td align="right" rowspan="2" >您的爱好:</td>
+  			<td ><input type="checkbox" name="dx1" />运动</td>
+  			<td align="left"><input type="checkbox" name="dx2" />阅读</td>
+  		</tr>
+  		<tr>
+  			
+  			<td><input type="checkbox" name="dx3" />听音乐</td>
+  			<td align="left"><input type="checkbox" name="dx4" />旅游</td>
+  		</tr>
+  		<tr>
+  			<td colspan="3" align="center">
+  				<input type="submit" value="提交" />
+  				<input type="reset" value="全部重写" />
+  			</td>
+  		</tr>	
+  </table>
+</form>
+</body>
+</html>
