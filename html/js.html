@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style type="text/css">
+    .test span {
+        font-weight: bold;
+        color: blueviolet;
+    }
+    
+    em {
+        font-style: normal;
+    }
+</style>
+
+<body>
+    <script>
+        function reverse(arr) {
+            var newArry = [];
+            for (i = arr.length - 1; i >= 0; i--) {
+                newArry[newArry.length] = arr[i];
+            }
+            return newArry;
+        }
+        var a = reverse(["apple", "orange", "banan"]);
+        console.log(a);
+
+        function Star(name, age, sex) {
+            this.name = name;
+            this.age = age;
+            this.sex = sex;
+            this.sing = function(sang) {
+                console.log(sang);
+            }
+        }
+        var ldh = new Star("liudehua", "18", "male");
+        console.log(ldh.name);
+        ldh.sing("dwangawngi");
+        console.log(Math.PI);
+        var myMath = {
+            PI: 3.1415926,
+            max: function() {
+                var max = arguments[0];
+                for (var i = 0; i < arguments.length; i++) {
+                    if (arguments[i] > max)
+                        max = arguments[i];
+                }
+                return max;
+            },
+            min: function() {
+                var min = arguments[0];
+                for (var i = 0; i < arguments.length; i++) {
+                    if (arguments[i] < min)
+                        min = arguments[i];
+                }
+                return min;
+            }
+        }
+        console.log(myMath.max(55, 56));
+
+        function getRandom(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        var num = getRandom(1, 10);
+        console.log(num);
+        // 随机点名
+        var arr = ["张三", "李四", "李四", "李四", "李四", "李四", "李四", "李四", "李四", "张三丰", "王伟"];
+        console.log(arr[num]);
+        console.log(Date.now()); // 时间戳
+        //倒计时做法
+        function countDown(time) {
+            var nowTime = +new Date();
+            var inputTime = +new Date(time);
+            var times = (inputTime - nowTime) / 1000;
+            var d = parseInt(times / 60 / 60 / 24); //天
+            d = d < 10 ? "0" + d : d;
+            var h = parseInt(times / 60 / 60 % 24); //小时
+            h = h < 10 ? "0" + h : h;
+            var m = parseInt(times / 60 % 60);
+            m = m < 10 ? "0" + m : m;
+            var s = parseInt(times % 60);
+            s = s < 10 ? "0" + s : s;
+            return d + "天" + h + "时" + m + "分" + s + "秒";
+        }
+        console.log(countDown("2019-10-23 17:35:00"));
+        //数组去重  
+        // 思路  创建一个新的数组 从旧的数组从遍历 如果新的数组中没有这数 则把这个数push到新的数组里面去
+        function unique(arr) {
+            var newArry = [];
+            for (var i = 0; i < arr.length; i++) {
+                if (newArry.indexOf(arr[i]) === -1) //关键代码
+                    newArry.push(arr[i]);
+            }
+            return newArry;
+        }
+        var demo = ["blud", "yellow", "yellow"];
+        console.log(unique(demo));
+        //求字符串中某个字符出现的次数和位置
+        var arr = "abcbcbacscjacjsacnasjvn";
+        var index = arr.indexOf("c");
+        var num = 0;
+        while (index !== -1) {
+            console.log(index);
+            num++;
+            index = arr.indexOf("c", index + 1);
+        }
+        console.log(num);
+        // 统计一个字符串中某个字符出现的次数最多的次数
+        var arr = "abcbcbacscjacjsacnasjvn";
+        var o = {};
+        for (var i = 0; i < arr.length; i++) {
+            var chats = arr.charAt(i);
+            if (o[chats]) {
+                o[chats]++;
+            } else {
+                o[chats] = 1;
+            }
+        }
+        console.log(o);
+        var ma = 0;
+        for (var k in o) {
+            if (o[k] > max)
+                max = o[k];
+        }
+        console.log(max);
+    </script>
+</body>
+
+</html>
