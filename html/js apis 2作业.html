@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        input {
+            outline: none;
+        }
+        
+        .box {
+            margin: 100px;
+            position: relative;
+            height: 115px;
+            width: 500px;
+        }
+        
+        .img1 {
+            position: absolute;
+            top: 0px;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        li {
+            background-color: #ccc;
+            color: midnightblue;
+            width: 100px;
+            height: 25px;
+            display: block;
+            line-height: 25px;
+            text-align: center;
+            margin: 10px 0;
+        }
+        
+        li:nth-child(2) {
+            display: none;
+        }
+        
+        li:nth-child(3) {
+            display: none;
+        }
+        
+        li:nth-child(4) {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <input type="text" class="int" value="邮箱/ID/手机号">
+    <div class="box">
+        <img src="../img/xy_logo.png" alt="" class="img2">
+        <img src="../img/wrong.png" alt="" class="img1"></div>
+    <div class="lie">
+        <ul>
+            <li id="tt">
+                <a href="#"> 微博</a>
+            </li>
+            <li>
+                <a href="#">私信</a>
+            </li>
+            <li>
+                <a href="#">评论
+                </a>
+            </li>
+            <li>
+                <a href="#">@我</a>
+            </li>
+        </ul>
+    </div>
+    <!-- 全选案例 常见于购物车 -->
+
+    <script>
+        var int = document.querySelector(".int");
+        int.onclick = function() {
+            this.style.border = "1px solid red ";
+            this.value = " ";
+        }
+        int.onblur = function() {
+            this.value = "邮箱/ID/手机号";
+            this.style.border = "1px solid #ccc ";
+
+        }
+        var img1 = document.querySelector(".img1");
+        var img2 = document.querySelector(".img2");
+        img1.onclick = function() {
+            img2.style.display = "none";
+            img1.style.display = "none";
+        }
+        var lis = document.querySelectorAll("li");
+        var tt = document.querySelector("#tt");
+        tt.onclick = function() {
+            for (var i = 1; i < lis.length; i++) {
+                lis[i].style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>

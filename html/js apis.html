@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        img {
+            width: 200px;
+            height: 200px;
+        }
+        
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="zxy">张学友</button>
+    <button id="ldh">刘德华</button>
+    <img src="../img/dog.jpg" alt="">
+    <button id="btn">点击</button>
+    <input type="text" value="请输入内容">
+    <div>123</div>
+    <script>
+        var zxy = document.querySelector("#zxy");
+        var ldh = document.querySelector("#ldh");
+        var img = document.querySelector("img");
+        zxy.onclick = function() {
+            img.src = "../img/dog2.jpg"
+        };
+        ldh.onclick = function() {
+            img.src = "../img/dog.jpg"
+        };
+        var btn = document.querySelector("#btn");
+        var input = document.querySelector("input");
+        btn.onclick = function() {
+            input.type = "password";
+            // this.disabled = true;
+        }
+        var dic = document.querySelector("div");
+        dic.onclick = function() {
+            this.style.backgroundColor = "red";
+            this.style.width = "500px"
+        }
+    </script>
+
+</body>
+
+
+</html>

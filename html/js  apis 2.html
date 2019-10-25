@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 循环实现精灵图 */
+        /* * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        li {
+            list-style-type: none;
+        }
+        
+        .box {
+            width: 250px;
+            margin: 100px auto;
+        }
+        
+        .box li {
+            float: left;
+            width: 24px;
+            height: 24px;
+            margin: 15px;
+            background: url(../img/sprite.png) no-repeat;
+        } */
+        
+        div {
+            width: 600px;
+            margin: 100px auto;
+        }
+        
+        .message {
+            display: inline-block;
+            font-size: 12px;
+            color: #999;
+            background: url(../img/mess.png) no-repeat left center;
+            padding-left: 20px;
+        }
+        
+        .wrong {
+            color: red;
+            background-image: url(../img/wrong.png);
+        }
+        
+        .right {
+            color: green;
+            background-image: url(../img/right.png);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 循环实现精灵图 -->
+    <!-- <div class="box">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div> -->
+
+    <div class="register">
+        <input type="password" class="ipt">
+        <p class="message">请输入6~16位密码</p>
+        <script>
+            // var lis = document.querySelectorAll("li");
+            // for (var i = 0; i < lis.length; i++) {
+            //     var index = i * 44;
+            //     lis[i].style.backgroundPosition = "0px,-" + index + "px";
+            // }
+            var ipt = document.querySelector(".ipt");
+            var message = document.querySelector(".message")
+            ipt.onblur = function() {
+                if (this.value.length < 6 || this.value.length > 16) {
+                    message.className = "message wrong";
+                    message.innerHTML = "您输入的不对，请输入6~16位密码";
+                } else {
+                    message.className = 'message right';
+                    message.innerHTML = "您输入的正确";
+                }
+            }
+        </script>
+</body>
+
+</html>
