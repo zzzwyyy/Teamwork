@@ -1,0 +1,46 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/mine/mine",
+        "pages/search/search",
+        "pages/other/other",
+        "pages/logs/logs"
+    ],
+    "window": {
+        "backgroundTextStyle": "dark",
+        "navigationBarTitleText": "西安邮电大学",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#014a95"
+    },
+    "tabBar": {
+        "backgroundColor": "#014a95",
+        "color": "#ffffff",
+        "list": [{
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "img/home.png",
+                "selectedIconPath": "img/home1.png"
+            },
+            {
+                "pagePath": "pages/mine/mine",
+                "text": "官方微信",
+                "iconPath": "img/wx1.png",
+                "selectedIconPath": "img/wx.png"
+            },
+            {
+                "pagePath": "pages/search/search",
+                "text": "搜索",
+                "iconPath": "img/search.png",
+                "selectedIconPath": "img/search1.png"
+            },
+            {
+                "pagePath": "pages/other/other",
+                "text": "更多",
+                "iconPath": "img/other1.png",
+                "selectedIconPath": "img/other.png"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json"
+}

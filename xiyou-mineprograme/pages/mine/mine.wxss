@@ -1,0 +1,11 @@
+/* pages/mine/mine.wxss */
+view{
+  width: 100%;
+  height: 1100rpx;
+  margin-left: 100rpx;
+}
+image{
+  width: 70%;
+  height: 1100rpx
+ 
+}

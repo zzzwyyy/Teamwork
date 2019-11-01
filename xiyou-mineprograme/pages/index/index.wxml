@@ -1,0 +1,253 @@
+<!-- 首页轮播图 -->
+<view class="swi">
+    
+<swiper  class = "sw" style = "height:{{imgheights[current]}}px" autoplay="true" interval="5000" duration="1000" circular="true" bindchange='bindchange'>
+<block wx:for="{{imgUrls}}" wx:key="{{index}}">
+
+<swiper-item>
+<image src="{{item}}" data-id ="{{index}}" mode="widthFix" bindload="imgload"/>
+</swiper-item>
+
+</block>
+
+</swiper>
+</view>
+
+<navigator class="" target="" url="" hover-class="navigator-hover" open-type="navigate">
+   
+<view class="bgc"><!-- 首页背景 -->
+  <image src="http://www.xiyou.edu.cn/newWeb/images/xy_logo.png" class="xy-logo" mode="widthFix"/>
+  <image src="https://s2.ax1x.com/2019/11/01/KHG62j.png" class="yy" mode="widthFix"/>
+</view>
+</navigator>
+
+<view class="laber">
+  <view class="left">
+    西邮要闻
+  </view>
+    <view class="right">
+      进入新闻网
+    </view>
+</view>
+<view class="infor">
+  <swiper indicator-dots="true" class = "sw" style = "height:{{imgheights[current]}}px" autoplay="true" interval="5000" duration="1000" circular="true" bindchange='bindchange'>
+
+<block wx:for="{{imgUrls1}}" wx:key="{{index}}">
+
+<swiper-item>
+<image src="{{item}}" data-id ="{{index}}" mode="widthFix" bindload="imgload"/>
+</swiper-item>
+</block>
+</swiper>
+</view>
+  <view class="news">
+    <view class="item"><navigator class="" target="" url="" hover-class="navigator-hover" open-type="navigate">
+        【“不忘初心、牢记使命”主题教育专栏】我校...<view class="date">
+           10-31
+         </view>
+    </navigator>
+      </view>
+    <view class="item"><navigator class="" target="" url="" hover-class="navigator-hover" open-type="navigate">
+      我校举行2020届秋季就业洽谈会....<view class="date">
+           10-31
+         </view>
+    </navigator>
+      </view><view class="item" ><navigator class="" target="" url="" hover-class="navigator-hover" open-type="navigate">
+      【“不忘初心、牢记使命”主题教育专栏】我校....<view class="date">
+           10-31
+         </view>
+    </navigator>
+      </view><view class="item"><navigator class="" target="" url="" hover-class="navigator-hover" open-type="navigate">
+        校长范九伦检查省级“平安校园”创建工作....
+         <view class="date">
+           10-31
+         </view>
+           
+    </navigator>
+      </view>
+  </view>
+<view class="news">
+   <view class="menu"> 
+     <view class="menu-l">
+       综合新闻
+     </view>
+       <view class="menu-r">
+        媒体关注
+       </view>
+         
+   </view>
+  
+    <view class="item"><navigator class="" target="" url="" hover-class="navigator-hover" open-type="navigate">
+    【“不忘初心、牢记使命”主题教育专栏】我校.....<view class="date">
+           10-31
+         </view>
+    </navigator>
+      </view><view class="item" ><navigator class="" target="" url="" hover-class="navigator-hover" open-type="navigate">
+      【“不忘初心、牢记使命”主题教育专栏】我校....<view class="date">
+           10-31
+         </view>
+    </navigator>
+      </view><view class="item"><navigator class="" target="" url="" hover-class="navigator-hover" open-type="navigate">
+        校长范九伦检查省级“平安校园”创建工作....
+         <view class="date">
+           10-31
+         </view>
+    </navigator>
+      </view>
+  </view>
+  <view class="more">
+    <view class="morel">
+  更多 >
+  </view>
+  </view>
+         
+<view class="icons">
+  <view class="icon"> 
+     <image src="https://s2.ax1x.com/2019/10/31/KoyuLQ.jpg" mode="widthFix"/>
+  </view>
+   <view class="icon"> 
+     <image src="https://s2.ax1x.com/2019/10/31/KoyuLQ.jpg" mode="widthFix"/>
+  </view>
+   <view class="icon"> 
+     <image src="https://s2.ax1x.com/2019/10/31/KoyuLQ.jpg" mode="widthFix"/>
+  </view>
+   <view class="icon"> 
+     <image src="https://s2.ax1x.com/2019/10/31/KoyuLQ.jpg" mode="widthFix"/>
+  </view>
+  
+</view>
+         
+<view class="icons1">
+  <view class="icon"> 
+     <image src="https://s2.ax1x.com/2019/10/31/KoyuLQ.jpg" mode="widthFix"/>
+  </view>
+   <view class="icon"> 
+     <image src="https://s2.ax1x.com/2019/10/31/KoyuLQ.jpg" mode="widthFix"/>
+  </view>
+   <view class="icon"> 
+     <image src="https://s2.ax1x.com/2019/10/31/KoyuLQ.jpg" mode="widthFix"/>
+  </view>
+   <view class="icon"> 
+     <image src="https://s2.ax1x.com/2019/10/31/KoyuLQ.jpg" mode="widthFix"/>
+  </view>
+  
+</view>
+   <view class="news">
+   <view class="menu"> 
+     <view class="menu-l">
+       通知公告
+     </view>
+       <view class="menu-r">
+        学术信息
+       </view>
+         
+   </view>
+  
+    <view class="item"><navigator class="" target="" url="" hover-class="navigator-hover" open-type="navigate">
+    【“不忘初心、牢记使命”主题教育专栏】我校.....<view class="date">
+           10-31
+         </view>
+    </navigator>
+      </view><view class="item" ><navigator class="" target="" url="" hover-class="navigator-hover" open-type="navigate">
+      【“不忘初心、牢记使命”主题教育专栏】我校....<view class="date">
+           10-31
+         </view>
+    </navigator>
+      </view><view class="item"><navigator class="" target="" url="" hover-class="navigator-hover" open-type="navigate">
+        校长范九伦检查省级“平安校园”创建工作....
+         <view class="date">
+           10-31
+         </view>
+    </navigator>
+      </view>
+  </view>
+  <view class="more">
+    <view class="morel">
+  更多 >
+  </view>
+  </view>
+  <view class="speclai">
+    <view class="special-l">
+      专题栏
+    </view>
+  </view>
+      <view class="list">
+        <view class="list-l">
+          <image src="https://s2.ax1x.com/2019/10/31/KofH4H.png" mode="widthFix" />
+            本科生招生
+        </view>
+        <view class="list-l">
+          <image src="https://s2.ax1x.com/2019/10/31/KofH4H.png" mode="widthFix" />
+            本科生招生
+        </view>
+          
+      </view>
+        <view class="list">
+        <view class="list-l">
+          <image src="https://s2.ax1x.com/2019/10/31/KofH4H.png" mode="widthFix" />
+            本科生招生
+        </view>
+        <view class="list-l">
+          <image src="https://s2.ax1x.com/2019/10/31/KofH4H.png" mode="widthFix" />
+            本科生招生
+        </view>
+          
+      </view>  <view class="list">
+        <view class="list-l">
+          <image src="https://s2.ax1x.com/2019/10/31/KofH4H.png" mode="widthFix" />
+            本科生招生
+        </view>
+        <view class="list-l">
+          <image src="https://s2.ax1x.com/2019/10/31/KofH4H.png" mode="widthFix" />
+            本科生招生
+        </view>
+          
+      </view>  <view class="list">
+        <view class="list-l">
+          <image src="https://s2.ax1x.com/2019/10/31/KofH4H.png" mode="widthFix" />
+            本科生招生
+        </view>
+        <view class="list-l">
+          <image src="https://s2.ax1x.com/2019/10/31/KofH4H.png" mode="widthFix" />
+            本科生招生
+        </view>
+      </view>
+
+      <view class="adress">
+        <view class="adress-title">
+          雁塔校区
+        </view> 
+      </view>
+        <view class="mine">
+          <view class="mine-item">
+          电话： 029-85383106
+          </view>
+            <view class="mine-item">
+              邮政编码： 710061
+            </view>
+              <view class="mine-item">
+                雁塔区地址：西安市长安南路563号
+              </view>
+                
+        </view>
+        <view class="adress">
+        <view class="adress-title">
+          长安校区
+        </view> 
+      </view>
+        <view class="mine">
+          <view class="mine-item">
+          电话： 029-85383106
+          </view>
+            <view class="mine-item">
+              邮政编码： 710121
+            </view>
+              <view class="mine-item">
+                雁塔区地址：西安市长安区西长安街618号
+              </view>
+        </view>
+          <view class="footer">
+            版权所有： 西安邮电大学 2011-2017 中国西安长安南路563号 陕ICP备040096号
+          </view>
+            
+

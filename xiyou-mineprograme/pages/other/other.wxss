@@ -1,0 +1,150 @@
+/* pages/other/other.wxss */
+
+
+/**index.wxss**/
+
+page {
+    background: #f4f4f4;
+}
+
+#header {
+    top: 0;
+    position: fixed;
+    z-index: -999;
+    width: 100%;
+    height: 100vh;
+    background: #014a95;
+    align-items: center;
+}
+
+#header .avatar {
+    margin-top: 50rpx;
+    margin-left: 275rpx;
+    width: 180rpx;
+    height: 180rpx;
+    border-radius: 70rpx;
+    border: 10rpx rgba(255, 255, 255, 0.2) solid;
+}
+
+#header .nickname {
+    width: 750rpx;
+    text-align: center;
+    margin-top: 10rpx;
+    font-size: 50rpx;
+    letter-spacing: 5rpx;
+    color: #fff;
+    height: 60rpx;
+    line-height: 60rpx;
+}
+
+#header .xueyuan {
+    width: 750rpx;
+    text-align: center;
+    padding-top: 10rpx;
+    font-size: 24rpx;
+    color: #f4f4f4;
+    height: 30rpx;
+    line-height: 30rpx;
+}
+
+#header .logo {
+    width: 750rpx;
+    font-size: 50rpx;
+    letter-spacing: 8rpx;
+    margin-top: 200rpx;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.content {
+    width: 750rpx;
+    margin-top: 430rpx;
+    padding-bottom: 100rpx;
+    background-color: #f4f4f4;
+    border-top-left-radius: 30rpx;
+    border-top-right-radius: 30rpx;
+    box-shadow: 0 -10rpx 30rpx rgba(0, 0, 0, 0.05);
+}
+
+.cells {
+    width: 520rpx;
+    margin: 75rpx;
+    margin-bottom: -20rpx;
+    padding: 20rpx 40rpx 20rpx 40rpx;
+    background: #47a86c;
+    display: inline-block;
+    border-radius: 20rpx;
+}
+
+.cell {
+    margin-bottom: 10rpx;
+    font-size: 32rpx;
+    height: 80rpx;
+    color: #fff;
+    line-height: 80rpx;
+    width: 520rpx;
+    border-bottom: 1rpx rgba(255, 255, 255, 0.3) solid;
+    display: flex;
+}
+
+.cell .cell-bd {
+    width: 400rpx;
+}
+
+.cell .cell-ft {
+    width: 200rpx;
+    text-align: right;
+    font-size: 26rpx;
+    color: #f4f4f4;
+}
+
+.cell .fa {
+    color: #f4f4f4;
+    margin-left: 10rpx;
+    width: 60rpx;
+}
+
+.box {
+    position: fixed;
+    width: 550rpx;
+    background: #fff;
+    bottom: 50rpx;
+    left: 80rpx;
+    border-radius: 20rpx;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 20rpx;
+    display: flex;
+}
+
+.box .color {
+    width: 80rpx;
+    height: 80rpx;
+    margin: 15rpx;
+    border-radius: 10rpx;
+}
+
+.box .color text {
+    color: #fff;
+    text-align: center;
+    line-height: 80rpx;
+    width: 80rpx;
+    font-size: 50rpx;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    border: none;
+    box-sizing: content-box;
+    border-radius: 0;
+    background: none;
+}
+
+.button-hover {
+    background: none;
+}
+
+button::after {
+    border: none;
+}

@@ -1,0 +1,14 @@
+.box{
+  position: relative;
+width: 1000rpx;
+height: 1000rpx;
+}
+.box1{
+  position: absolute;
+  width: 400rpx;
+  height: 400rpx;
+  color: #ccc;
+  left: 25%;
+  top: 50%;
+
+}

@@ -1,0 +1,195 @@
+        .bgc {
+            background-color: #014a95;
+            width: 100%;
+            height: 100rpx;
+            top: 0rpx;
+            position: absolute;
+        }
+        
+        .xy-logo {
+            width: 400rpx;
+            bottom: 20rpx;
+        }
+        
+        .yy {
+            width: 50rpx;
+            height: 50rpx;
+            float: right;
+            color: white;
+            margin-top: 20rpx;
+            margin-right: 20rpx;
+        }
+        
+        .logo-r {
+            right: 60rpx;
+        }
+        
+        .swi {
+            position: relative;
+            top: 100rpx;
+        }
+        
+        sw {
+            width: 100%;
+        }
+        
+        image {
+            width: 100%;
+        }
+        
+        .laber {
+            width: 100%;
+            position: relative;
+            height: 100rpx;
+            line-height: 100rpx;
+            border-bottom: 2px solid blue;
+        }
+        
+        .laber .left {
+            font-size: 32rpx;
+            position: absolute;
+            left: 30rpx;
+            color: blue;
+            font-weight: 700;
+        }
+        
+        .laber .right {
+            font-size: 28rpx;
+            position: absolute;
+            right: 30rpx;
+            color: #e10601;
+        }
+        
+        .infor {
+            padding: 20rpx;
+        }
+        
+        .news {
+            padding: 20rpx;
+        }
+        
+        .date {
+            float: right;
+        }
+        
+        .news .item {
+            font-size: 28rpx;
+            border-bottom: 1px dashed #cfcfcf;
+            height: 60rpx;
+            line-height: 60rpx;
+        }
+        
+        .menu {
+            width: 100%;
+            height: 60rpx;
+        }
+        
+        .menu .menu-l {
+            width: 50%;
+            text-align: center;
+            line-height: 60rpx;
+            height: 60rpx;
+            float: left;
+            background-color: #ccc;
+            color: blue;
+        }
+        
+        .menu .menu-r {
+            width: 50%;
+            text-align: center;
+            line-height: 60rpx;
+            height: 60rpx;
+            float: right;
+            background-color: #ccc;
+            color: whitesmoke;
+        }
+        
+        .more {
+            width: 100%;
+            height: 60rpx;
+            border-bottom: 1px solid #ccc;
+        }
+        
+        .more .morel {
+            width: 400rpx;
+            color: #13227a;
+            font-size: 25rpx;
+            margin: 20rpx auto;
+            background-color: #ccc;
+            height: 40rpx;
+            text-align: center;
+            line-height: 40rpx;
+        }
+        
+        .icons {
+            display: flex;
+            border-top: 1px solid #ccc;
+        }
+        
+        .icons1 {
+            display: flex;
+            border-bottom: 1px solid #ccc;
+        }
+        
+        .icon {
+            flex: 1;
+        }
+        
+        .special-l {
+            width: 100rpx;
+            font-size: 30rpx;
+            color: blue;
+            height: 60rpx;
+            border-bottom: 2px solid blue;
+            font-weight: 700;
+            padding-left: 20rpx;
+        }
+        
+        .list {
+            display: flex;
+        }
+        
+        .list-l {
+            flex: 1;
+            width: 170px;
+            height: 64rpx;
+            background-color: #eeeeee;
+            margin: 20rpx 40rpx 0px 40rpx;
+            color: #13227a;
+            font-size: 30rpx;
+        }
+        
+        .list-l image {
+            width: 64rpx;
+            height: 64rpx;
+            vertical-align: middle;
+        }
+        
+        .adress {
+            width: 100%;
+            height: 60rpx;
+            border-bottom: 2px solid blue;
+        }
+        
+        .adress .adress-title {
+            width: 150rpx;
+            height: 60rpx;
+            line-height: 60rpx;
+            border-left: 2px solid blue;
+            margin-left: 20rpx;
+            padding-left: 20rpx;
+        }
+        
+        .mine-item {
+            font-size: 26rpx;
+            margin-left: 40rpx;
+            margin-top: 30rpx;
+            margin-bottom: 30rpx;
+        }
+        
+        .footer {
+            color: #616161;
+            background-color: #eeeeee;
+            text-align: center;
+            font-size: 28rpx;
+        }

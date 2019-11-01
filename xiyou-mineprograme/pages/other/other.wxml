@@ -1,0 +1,59 @@
+<view class="NavBar" style="height:{{NavBarHeight}}px;background: {{StyleColor}};"></view>
+<view class="PageCont" style="padding-top:{{NavBarHeight}}px;">
+    <view id="header" style="background:{{StyleColor}};top:{{NavBarHeight}}px;">
+        <image bindlongtap="EnterAdmin" class="avatar" src="https://s2.ax1x.com/2019/11/01/KHnxIA.png"></image>
+    </view>
+    <view class="content inner ripple bounceInUp">
+        <view class="cells" style="background:{{StyleColor}};">
+            <view bindtap="viewPersonInfo" class="cell">
+                <view class="cell-bd">
+                    <text class="fa fa-user-circle"></text>身份认证</view>
+            </view>
+            <view bindtap="viewRecord" class="cell">
+                <view class="cell-bd">
+                    <text class="fa fa-paper-plane"></text>我的成绩</view>
+                <view class="cell-ft"></view>
+            </view>
+            <view bindtap="viewOrder" class="cell">
+                <view class="cell-bd">
+                    <text class="fa fa-shopping-cart"></text>我的课表</view>
+                <view class="cell-ft"></view>
+            </view>
+        </view>
+        <view class="cells" style="background:{{StyleColor}};">
+            <view bindtap="ChangeStyle" class="cell">
+                <view class="cell-bd">
+                    <text class="fa fa-tachometer"></text>更换配色</view>
+            </view>
+            <view bindtap="Setting" class="cell">
+                <view class="cell-bd">
+                    <text class="fa fa-cog"></text>系统设置</view>
+                <view class="cell-ft"></view>
+            </view>
+        </view>
+        <view class="cells" style="background:{{StyleColor}};">
+            <button class="cell" openType="share">
+                <view class="cell-bd">
+                    <text class="fa fa-share"></text>推荐给好友</view>
+                <view class="cell-ft"></view>
+            </button>
+            <button class="cell" openType="contact">
+                <view class="cell-bd">
+                    <text class="fa fa-commenting"></text>联系老师</view>
+            </button>
+            <view bindlongtap="text" bindtap="viewBanben" class="cell">
+                <view class="cell-bd">
+                    <text class="fa fa-info-circle"></text>关于西邮</view>
+                <view class="cell-ft">{{banben}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="box inner ripple bounceInUp" wx:if="{{ChangeStyle}}">
+        <view bindtap="SaveColor" class="color" data-color="{{item}}" style="background:{{item}};" wx:for="{{colors}}">
+            <text class="fa fa-check" wx:if="{{item==StyleColor}}"></text>
+        </view>
+        <view bindtap="MoreColor" class="color" style="background:{{StyleColor}};">
+            <text class="fa fa-plus"></text>
+        </view>
+    </view>
+</view>
