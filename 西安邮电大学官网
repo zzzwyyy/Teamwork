@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>西安邮电大学官网</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+		}
+		.one{margin: 10px;margin-bottom: 10px;}
+		.two{
+
+			background-image: url(css/VX7PUJ%(D8K500N]S`%N%LU.png);
+		}
+		a{text-decoration: none;}
+		.la{color: blue;
+			align-self: left;
+			width: 500px;
+		   }
+
+		td{display: inline-block;
+			font-size: 18px;
+			width: 105px;
+			height: 15px;
+			padding: 3px;
+			margin: 5px;}
+		.lala{overflow: hidden;
+			margin: 0 auto}
+		.ang{float: left;
+				width: 500px;
+				border-top: 2px solid blue;
+				margin: 0 auto;
+				padding-left: 40px;
+			}
+		.foot{background-color: blue;
+			height:50px;
+			font-size: 24px;
+			text-align: center;}
+	</style>
+
+</head>
+<body>	
+	<div><img src="css/Cache_6e070511f453d5d..jpg" width="100%" height="200px"></div>
+	<div  class="one" align="center" >
+	<table>
+		<tr>
+		<td><a href="http://www.xiyou.edu.cn/index.htm" >首页</a></td>
+		<td><a href="http://www.xiyou.edu.cn/xxgk/about1.htm">学校概况</a></td>
+		<td><A href="http://www.xiyou.edu.cn/jgsz/bmjj1.htm">机构设置</A></td>
+		<td><A href="http://www.xiyou.edu.cn/rcpy/jxzs1.htm">人才培养</A></td>
+		<td><A href="http://www.xiyou.edu.cn/szdw2/szdw1.htm">师资队伍</A></td>
+		<td><A href="http://www.xiyou.edu.cn/xkjs/sszy2.htm">学科建设</A></td>
+		<td><A href="http://www.xiyou.edu.cn/xkyj/zdxk1.htm">科学研究</A></td>
+		<td><a href="http://www.xiyou.edu.cn/zsjy/bysjy1.htm">招生就业</td>
+		<td><a href="http://www.xiyou.edu.cn/hzjl/gjjlgk1.htm">合作交流</a></td>
+		<td><a href="http://www.xiyou.edu.cn/xysh/xsh3.htm">校园生活</a></td>
+		<td><a href="http://www.xiyou.edu.cn/bzhy/bzhy1.htm">本周会议</a></td>
+		<td><a href="http://www.xiyou.edu.cn/xxfw/xywjs.htm">信息服务</a></td>
+		<td><a href="http://xyzh.xupt.edu.cn/" target="_blank">西邮校友</a></td>
+
+	</table>
+
+    </div>
+    <div><img src="css/0930guoqing70.jpg" height="500px"></div>
+
+
+<div class="lala">
+    <div class="ang">
+    	<ul>
+   			 <a href="http://www.xiyou.edu.cn/xwzx/xyyw.htm"><h1>西邮要闻</h1><p align="center">进入新闻网</p></a></hr>
+  			  <img src="css/34szzk11s9.jpg" width="400px">
+		</ul>
+	</div>
+    <div class="ang"><h1>综合新闻</h1></hr>
+    	<ul>
+    		<li>通信与信息工程</li>
+    		<li>弘扬西迁精神</li>
+    		<li>国家奖学金</li>
+    	</ul>
+    </div>
+    <div class="ang">
+            <h1>媒体关注</h1></hr>
+        	<ul>
+        		<li>西部网</li>
+
+    			<li>陕西省教育厅</li>
+    	</ul>
+    </div>
+
+ </div>
+
+
+
+
+
+<div class="lala">
+    <div class="ang"><h1>通知公告</h1>
+    	<ul>
+   			 <li>30/10
+关于举办《不忘初心，牢记使命 准确...</li>
+   			  <li>30/10
+招标结果公示（社会实践奖品）</li>
+
+   			   <li>30/10
+招标结果公示（学校宣传片）</li>
+   			    <li>30/10
+招标结果公示（校庆专题片）</li>
+   			     <li>30/10
+关于2019年消防培训演练通知</li>
+   			      <li>30/10
+关于举办“武当文化高校行” ——武...</li>
+		</ul>
+	</div>
+    <div class="ang"><h1>学术信息</h1></hr>
+    	<ul>
+    		<li>31
+2019-10
+关于举办胡红钢教授学术报告...
+各部门、各单位：应我校网络空间安全学...</li>
+    		<li>31
+2019-10
+关于举办马文平、何德彪、夏...
+各部门、各单位：应我校网络空间安全学..</li>
+    		<li>30
+2019-10
+关于举办刘继明教授学术报告...
+各部门、各单位：应我校通信与信息工程.</li>
+    	</ul>
+    </div>
+    <div class="ang">
+            <h1>专题栏</h1></hr>
+        	<ul>
+        		<li><img src="css/11.png">本科生招生</li>
+
+        		<li><img src="css/12.png">研究生招生</li>
+        		<li><img src="css/13.png">招聘专栏</li>
+        		<li><img src="css/14.png">就业指南</li>
+        		<li><img src="css/15.png">信息直通车</li>
+        		<li><img src="css/16.png">财务信息公开</li>
+        		<li><img src="css/17-1.png">网站评比</li>
+
+        		<li><img src="css/18.png">信息公开</li>
+  
+
+
+
+			
+    	</ul>
+    </div>
+
+ </div>
+
+
+
+
+
+
+	<div align="center" class="two" >
+	<table>
+		
+		<tr>
+		<td><a href="http://www.xiyou.edu.cn/index.htm" ><img src="css/1.png"> </a></td>
+		<td><a href="http://www.xiyou.edu.cn/xxgk/about1.htm"><img src="css/2.png"></a></td>
+		<td><A href="http://www.xiyou.edu.cn/jgsz/bmjj1.htm"><img src="css/3.png"></A></td>
+		<td><A href="http://www.xiyou.edu.cn/rcpy/jxzs1.htm"><img src="css/4.png"></A></td>
+		<td><A href="http://www.xiyou.edu.cn/szdw2/szdw1.htm"><img src="css/5.png"></A></td>
+		<td><A href="http://www.xiyou.edu.cn/xkjs/sszy2.htm"><img src="css/6.png"></A></td>
+		<td><A href="http://www.xiyou.edu.cn/xkyj/zdxk1.htm"><img src="css/7.png"></A></td>
+		<td><a href="http://www.xiyou.edu.cn/zsjy/bysjy1.htm"><img src="css/8.png"></td>
+		</tr>
+	
+		<tr></tr>
+		<tr></tr>
+		<tr></tr>
+		<tr></tr>
+		<tr></tr>
+		<tr></tr>
+		<tr></tr>
+		<tr></tr>
+		<tr></tr>
+		<tr>
+			<td>邮箱登录</td>
+			<td>办公自动化</td>
+			<td>教务信息</td>
+			<td>科研管理</td>
+			<td>西邮校报</td>
+			<td>图书借阅</td>
+			<td>网络教学</td>
+			<td>新生自助报道</td>
+		</tr>
+
+	</table>
+
+    </div>
+
+    <div class="lala">
+    	<div class="ang">
+    		<li><h4>雁塔校区</h4></li>
+    		<li>电话：029-85383106</br>
+
+                 邮政编码：710061</br>
+
+                 雁塔校区地址：西安市长安南路563号</li>
+                 <hr>
+             <li><h4>长安校区</h4></li>
+    		<li>电话：029-88166105</br>
+
+				邮政编码：710121<br>
+
+				长安校区地址：西安市长安区西长安街618号
+    	</div>
+    	<div class="ang"><img src="css/foot_2_23.png"></div>
+    	<div class="ang">
+    		<h4>关注我们</h4>
+    		<img src="css/foot_ewm_30.png">
+    		<h4>友情链接</h4>
+    		<form action="action.php" method="post" target="_blank">
+    			<tr>
+				
+				<td>
+					<select name="xuanze">
+						<option value="1" selected="">相关链接</option>
+						<option value="2" >北京邮电大学</option>
+						<option value="3">重庆邮电大学</option>
+						>
+					</select>
+				</td>
+
+    				</td>
+    			</tr>
+    		</form>
+
+    	</div>
+    </div>
+
+    <div class="foot">版权所有：西安邮电大学 2011-2017 中国西安长安南路563号 陕ICP备040096号</div>
+</body>
+</html>
