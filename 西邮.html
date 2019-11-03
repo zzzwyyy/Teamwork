@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>官方网页</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		/*页头部分CSS样式*/
+		.head{
+			width: 100%;
+			height: 100px;
+			background-color: rgb(1,74,149);
+		}
+		.logo{
+			padding-left: 100px;
+			width:40%;
+			height: 100px;
+		}
+		/*导航栏样式*/
+		.td1{
+			height: 50px;
+			color: rgb(1,74,149);
+		}
+		/*banner*/
+		.banner{
+			width:100%;
+			height: 500px;
+		}
+		/*西邮要闻样式*/
+		.news{
+			/*width:35%;*/
+			height: 760px;
+			padding-top:20px; 
+			border-right: 2px rgb(1,74,149) solid;
+		}
+		.n{
+			width: 80%;
+			height: 200px;
+		}
+		.word{
+			font-size: 20px;
+		}
+		/*通知公告样式*/
+		.notice{
+			width:48%;
+			padding-left: 1%;
+			display: inline-block;
+		}
+		/*学术信息样式*/
+		.edu{
+			width:48%;
+			padding-left: 1%;
+			display: inline-block;
+		}
+		/*大表格部分样式*/
+		.body{
+			width: 100%;
+
+		}
+		/*文字部分样式*/
+		.notice p{
+			font-size: 25px;
+		}
+		.edu p{
+			font-size: 25px;
+		}
+		/*小图标部分图片样式*/
+		td img{
+			height: 60px;
+			width:60px;
+		}
+		/*西邮专题内div样式*/
+		.zt1{
+			/*background: #d3d3d3;*/
+			display: inline-block;
+			height: 40px;
+			width: 15%;
+			margin: 2%;
+			font-size: 20px;
+			padding: 8px;
+		}
+		/*页尾*/
+		.foot{
+			width: 100%;
+			background-color: rgb(1,74,149);
+		}
+		.yw1{
+			padding: 1px;
+			display: inline-block;
+			font-size: 20px;
+			color: white;
+			padding-left: 30px;
+		}
+		.yw2{
+			padding: 1px;
+			display: inline-block;
+			float: right ;
+		}
+		.wz{
+			font-family: 楷体;
+			color:rgb(1,74,149);
+		}
+		/*美丽西邮*/
+		.big{
+			width:100%;
+			height: 400px;
+			vertical-align: middle;
+		}
+		.pic{
+			width:300px;
+			height: 180px;
+		}
+		.part{
+			display: inline-block;
+			float: left;
+			padding-left: 10px;
+			padding-right: 20px;
+		}
+		.part2{
+			display: inline-block;
+			width:25%;
+			height: 100%;
+			text-align: center;
+			float: left;
+		}
+		.wz2{
+			font-size: 40px;
+			font-family: 楷体;
+			color: rgb(1,74,149);
+			vertical-align: middle;
+			text-align: center;
+		}
+		.wz3{
+			font-size: 19px;
+		}
+		/*超链接伪类设置*/
+		a:link{color: rgb(1,74,149);}
+		a:visited{color: blue;}
+		a:active{color:purple;}
+		a{
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<!--页头部分，学校标志-->
+	<div class="head"><img src="C:\Users\86157\Desktop\西邮\head.png" class="logo" /></div>
+	<!--导航栏，表格实现-->
+	<table cellspacing="0" align="center" border="1" rules="cols" width="100%">
+		<tr valign="middle">
+			<td align="center" class="td1"><a href="http://www.xiyou.edu.cn/xxgk/about1.htm" target="blank">学校概况</a></td>
+			<td align="center" class="td1"><a href="http://www.xiyou.edu.cn/jgsz/bmjj1.htm" target="blank">机构设置</a></td>
+			<td align="center" class="td1"><a href="http://www.xiyou.edu.cn/rcpy/jxzs1.htm" target="blank">人才培养</a></td>
+			<td align="center" class="td1"><a href="http://www.xiyou.edu.cn/szdw2/szdw1.htm" target="blank">师资队伍</a></td>
+			<td align="center" class="td1"><a href="http://www.xiyou.edu.cn/xkjs/sszy2.htm" target="blank">学科建设</a></td>
+			<td align="center" class="td1"><a href="http://www.xiyou.edu.cn/xkyj/zdxk1.htm" target="blank">科学研究</a></td>
+			<td align="center" class="td1"><a href="http://www.xiyou.edu.cn/zsjy/bysjy1.htm" target="blank">招生就业</a></td>
+			<td align="center" class="td1"><a href="http://www.xiyou.edu.cn/hzjl/gjjlgk1.htm" target="blank">合作交流</a></td>
+			<td align="center" class="td1"><a href="http://www.xiyou.edu.cn/xysh/xsh3.htm" target="blank">校园生活</a></td>
+		</tr>
+	</table>
+		<!--banner图-->
+		<img src="C:\Users\86157\Desktop\西邮\3.jpg" class="banner" />
+		<hr width="95%" color="rgb(1,74,149)">
+		<!--内容部分-->
+		<!--美丽西邮-->
+		<div class="big">
+			<div class="part">
+				<div><img src="C:\Users\86157\Desktop\西邮\p1.jpg" class="pic" /></div>
+				<div><img src="C:\Users\86157\Desktop\西邮\p2.jpg" class="pic"/></div>
+			</div>
+			<div class="part2 ">
+				<div class="wz2">
+				<br>美<br>丽<br>西<br>邮<br>
+				</div>
+			</div>
+			<div class="part">
+				<div><img src="C:\Users\86157\Desktop\西邮\p3.jpg" class="pic"/></div>
+				<div><img src="C:\Users\86157\Desktop\西邮\p4.jpg" class="pic"/></div>
+			</div>
+			<div class="part2" >
+				<h2 class="wz">学校介绍</h2>
+				<br>
+				<p class="wz3">西安邮电大学（Xi’an University of Posts & Telecommunications）简称“西邮”，位于世界历史名城古都西安，创建于1950年，是中华人民共和国工业和信息化部与陕西省政府共建高校、陕西省省属高水平大学、教育部“卓越工程师教育培养计划”实施高校、国家级大学生创新创业训练计划立项高校、教育部”新工科研究与实践项目“入选高校、长安联盟、CDIO工程教育联盟成员单位，中国人民解放军后备军官选拔培养基地、全国首批试办边防军人子女预科班的高校、西北地区唯一承担亚太电信组织和东盟培训任务的高校，已发展成一所以工学为主，以信息科学技术为特色，工、理、管、经、文、法、艺多学科协调发展的教学研究型大学。</p>
+			</div>
+			
+		</div>
+		<hr width="95%" color="rgb(1,74,149)">
+		<div >
+			<table class="body" cellspacing="0">
+				<!--西邮要闻-->
+				<tr>
+					<td width="35%">
+						<div class="news" >
+							<h2 align="center" class="wz">西邮要闻</h2>
+							<br>
+							<img src="C:\Users\86157\Desktop\西邮\N1.jpg" class="n" align="center" />
+							<p class="word" align="center"><a href="http://news.xupt.edu.cn/info/1002/16353.htm" target="blank">“不忘初心，牢记使命”主题教育</a></p>
+							<br>
+							<img src="C:\Users\86157\Desktop\西邮\N2.jpg" class="n" align="center" />
+							<p class="word" align="center"> <a href="http://news.xupt.edu.cn/info/1002/15929.htm" target="blank">喜迎2019级新生报到</a></p>
+							<br>
+							<img src="C:\Users\86157\Desktop\西邮\N3.jpg" class="n" />
+							<p class="word" align="center"><a href="http://news.xupt.edu.cn/info/1002/15775.htm" target="blank">第十四届研究生电子设计竞赛</a></p>
+						</div>
+					</td>
+					<td width="65%" >
+							<!--小标题-->
+						<div >
+							<br>
+							<table width="100%" cellspacing="0" border="0">
+								<tr>
+									<td align="center"><img src="C:\Users\86157\Desktop\西邮\教务信息.png"/></td>
+									<td align="center"><img src="C:\Users\86157\Desktop\西邮\科研.png"/></td>
+									<td align="center"><img src="C:\Users\86157\Desktop\西邮\图书.png"/></td>
+									<td align="center"><img src="C:\Users\86157\Desktop\西邮\office.png"/></td>
+								</tr>
+								<tr>
+									<td align="center"><a href="http://www.xiyou.edu.cn/xxfw/cyfw1.htm" target="blank">教务信息</a></td>
+									<td align="center"><a href="http://kjc.xupt.edu.cn/" target="blank">科研管理</a></td>
+									<td align="center"><a href="http://lib.xupt.edu.cn/" target="blank">图书借阅</a></td>
+									<td align="center"><a href="oa.xupt.edu.cn/Services/Identification/Server/Login.aspx?service=http://oa.xupt.edu.cn/Services/Identification/login.ashx
+" target="blank">办公自动化</a></td>
+								</tr>
+								<tr>
+									<td align="center"><img src="C:\Users\86157\Desktop\西邮\自助报道.png"/></td>
+									<td align="center"><img src="C:\Users\86157\Desktop\西邮\email.png"/></td>
+									<td align="center"><img src="C:\Users\86157\Desktop\西邮\校报.png"/></td>
+									<td align="center"><img src="C:\Users\86157\Desktop\西邮\网络.png"/></td>
+								</tr>
+								<tr>
+									<td align="center"><a href="http://yingxin.xupt.edu.cn/frontend/freshman_service/home/#/login" target="blank">自助报道</a></td>
+									<td align="center"><a href="http://webmail.xupt.edu.cn/" target="blank">邮箱登陆</a></td>
+									<td align="center"><a href="http://xiaobao.xupt.edu.cn/" target="blank">西邮校报</a></td>
+									<td align="center"><a href="http://elearn.xupt.edu.cn/meol/index.do" target="blank">网络教学</a></td>
+								</tr>
+							</table>
+							<br>
+							<br>
+							<br>
+						</div>
+
+						<br>
+						<hr width="90%" color="rgb(1,74,149)">
+						<br>
+						<!--文字-->
+						<div class="">
+							<!--通知公告-->
+							<div class="notice">
+								<h2 align="center" class="wz">通知公告</h2>
+								<br>
+								<p>- 10月25日 关于举办“全国信息通信类高校经管学科建设暨西安邮电大学经管经管专业创立60周年大会”的通知</p>
+								<p>- 10月25日 招标公示</p>
+								<p>- 10月24日 招标结果公示</p>
+								<p>- 10月24日 关于做好学校第59期党校网络培训的通知</p>
+								<p>- 10月23日 招标公告</p>
+								<p>- 10月18日 招标公告</p>
+								<p>- 10月17日 关于举办“华晟经世杯”2019年全国高度学校电子信息类专业青年教师授课竞赛决赛暨教师教学能力提升研讨会的通知</p>
+							</div>
+							<!--学术信息-->
+							<div class="edu">
+								<h2 align="center" class="wz">学术信息</h2>
+								<br>
+								<p>2019年10月28日 <br>关于举办第五十三期西邮人文大讲堂暨西迁精神与大学生成长主题报告会的通知</p>
+								<p>2019年10月28日 <br>关于举办柏连发教授学术报告的通知——校庆七十周年学术名家讲座第五讲</p>
+								<p>2019年10月28日 <br>关于举办赵慧琳教授学术报告的通知——2019西邮学术讲座第126讲</p>
+								<p>2019年10月21日 <br>关于举报张绍波学术报告的通知——西邮学术讲座第121讲</p>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+	<br>
+	<hr width="95%" color="rgb(1,74,149)" height="5px">
+	<!--西邮专题-->
+	<div>
+		<div>
+			<br>
+			<h2 align="center" class="wz">西邮专题</h2>
+		</div>
+		<div align="center">
+			<div>
+				<div class="zt1"><a href="http://zhaosheng.xupt.edu.cn/" target="blank"><img src="C:\Users\86157\Desktop\西邮\本科.png"/></div>
+				<div class="zt1"><a href="http://rsc.xupt.edu.cn/rczp.htm" target="blank"><img src="C:\Users\86157\Desktop\西邮\招聘.png"/></div>
+				<div class="zt1"><a href="https://ztc.xupt.edu.cn:3000/" target="blank"><img src="C:\Users\86157\Desktop\西邮\信息.png"/></div>
+				<div class="zt1"><a href="http://iweb.xupt.edu.cn/" target="blank"><img src="C:\Users\86157\Desktop\西邮\网站.png"/></div>
+			</div>
+			<div>
+				<div class="zt1"><a href="http://gr.xupt.edu.cn/" target="blank"><img src="C:\Users\86157\Desktop\西邮\研究生.png"/></div>
+				<div class="zt1"><a href="http://jiuye.xupt.edu.cn/" target="blank"><img src="C:\Users\86157\Desktop\西邮\就业.png"/></div>
+				<div class="zt1"><a href="http://cwc.xupt.edu.cn/default.asp" target="blank"><img src="C:\Users\86157\Desktop\西邮\财务.png"/></div>
+				<div class="zt1"><a href="http://xiaoban.xupt.edu.cn/xxgk.htm" target="blank"><img src="C:\Users\86157\Desktop\西邮\公开.png"/></div>
+			</div>
+			
+		</div>
+	</div>
+
+	<!--页尾-->
+	<div class="foot">
+		<div class="yw1">
+			<h3>联系我们：</h3>
+			<p>
+				长安校区地址：西安市长安区西长安街618号<br>
+				邮政编码：710121<br>
+				电话：029-88166105<br><br>
+				雁塔校区地址：西安市长安南路563号<br>
+				邮政编码：710061<br>
+				电话：029-85383106<br>
+			</p>
+		</div>
+		<div class="yw2">
+			<img src="C:\Users\86157\Desktop\西邮\2.jpg">
+		</div>
+	</div>
+</body>
+</html>
