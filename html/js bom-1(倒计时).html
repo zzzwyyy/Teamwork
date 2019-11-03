@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 100px;
+            margin: 0 auto;
+            display: flex;
+        }
+        
+        .box-1,
+        .box-2,
+        .box-3 {
+            flex: 1;
+            width: 50px;
+            height: 50px;
+            background-color: #000;
+            color: aliceblue;
+            margin: 5px;
+            text-align: center;
+            line-height: 50px;
+        }
+    </style>
+    <script>
+        addEventListener("load", function() {
+            var hour = document.querySelector(".box-1");
+            var minute = document.querySelector(".box-2");
+            var second = document.querySelector(".box-3");
+            var inputTime = +new Date('2019-11-4 10:40:00'); //返回用户输入是时间的总毫秒数
+            countDown();
+            setInterval(countDown, 1000);
+
+            function countDown(time) {
+                var nowTime = +new Date(); //返回的是当前时间的总毫秒数
+                // var inputTime = +new Date();//返回用户输入是时间的总毫秒数
+                var times = (inputTime - nowTime) / 1000;
+                var d = parseInt(times / 60 / 60 / 24); //天
+                d = d < 10 ? "0" + d : d;
+                var h = parseInt(times / 60 / 60 % 24); //小时
+                h = h < 10 ? "0" + h : h;
+                hour.innerHTML = h;
+                var m = parseInt(times / 60 % 60);
+                m = m < 10 ? "0" + m : m;
+                minute.innerHTML = m;
+                var s = parseInt(times % 60);
+                s = s < 10 ? "0" + s : s;
+                second.innerHTML = s;
+                //return d + "天" + h + "时" + m + "分" + s + "秒";
+            }
+            //  console.log(countDown("2019-10-23 17:35:00"));
+            // 按钮点击之后会禁用 disable为true;
+            // 同时按钮里面的内容会发生变化注意button里面的内容通过innerHTML来修改
+            // 里面的秒数是有变化的所以需要用到定时器
+            // 定义一个变量 在定时器里面递减
+            // 需要判断 如果变量为0说明到时间了 这时需要停止定时器， 并且复原按钮初始状态
+            var btn = document.querySelector("button");
+            var time = 3;
+            btn.addEventListener("click", function() {
+                btn.disabled = true;
+                var timer = setInterval(function() {
+                    if (time == 0) {
+                        clearInterval(timer);
+                        btn.disabled = false;
+                        time = 3;
+                        btn.innerHTML = "发送";
+
+                    } else {
+                        btn.innerHTML = "还剩下" + time + "秒";
+                        time--;
+
+                    }
+
+                }, 1000)
+            })
+
+
+            console.log(100);
+            setTimeout(function() {
+                console.log(300);
+            }, 1000)
+            console.log(200);
+
+
+        })
+    </script>
+</head>
+
+<body>
+    <div class="box">
+        <div class="box-1">1</div>
+        <div class="box-2">2</div>
+        <div class="box-3">3</div>
+    </div>
+    <!--发送短信案例 -->
+    手机号码：<input type="text"><button>发送</button>
+
+</body>
+
+</html>
