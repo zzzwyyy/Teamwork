@@ -1,0 +1,64 @@
+.container{
+    display: flex;
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+    border: 3px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 3px 3px 3px 0px #999;
+    margin: 50px;
+    }
+.item {
+        width: 50px;
+        height: 50px;
+        background: #999;
+        border-radius: 50%;
+        /*可以绘制成一个圆形*/
+        box-shadow: 1px 1px 2px 0px #999;
+    }
+.one {
+        justify-content: center;
+        align-items: center;
+    }
+.two {
+        justify-content: space-between;
+        align-items: center;
+    }
+.three {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+.three div:first-child {
+        align-self: flex-start;
+    }
+
+.three div:last-child {
+        align-self: flex-end;
+    }
+    .four {
+        /* flex-direction: column; */
+        justify-content: space-around;
+    }
+
+.four .item {
+        margin: 15px;
+    }
+
+.four div {
+        align-items: space-between;
+
+    }
+.five,.six {
+        flex-direction: column;
+        flex-flow: wrap;
+        justify-content: space-around;
+    }
+
+.five .item,.six .item {
+        margin-right: 10px;
+        margin-left: 10px;
+        display: inline-block;
+    }
