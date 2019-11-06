@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>骰子练习flex布局</title>
+	<style type="text/css">
+		body{background-color: rgb(0,183,195);}
+		span{background-color: black;width: 51px;height: 51px;border-radius:50%;margin-right:5px;}
+		.root{width: 700px;height: 680px;background-color: gray;display: flex;flex-wrap: wrap;
+			justify-content: space-between;}
+
+		.tail{width: 700px;height: 220px;background-color: gray;display: flex;flex-wrap: wrap;
+			justify-content: space-between;}	
+		.a,.b,.c,.d,.e,.f,.g,.h,.i,.j,.k,.l,.m,.n,.o,.p,.q,.r,.s,.t,.u{background-color: white;flex-basis: 180px;margin-bottom:15px;margin-top: 15px; display: flex;padding: 5px;height: 180px;border-radius: 5px;}
+
+
+		.a{display: flex;}
+		.b{justify-content: center;}/*项目在主轴中心*/
+		.c{justify-content: flex-end;}/*项目在主轴尾巴*/
+		.d{align-items: center;}/*项目在交叉轴中心*/
+		.e{justify-content: center;align-items: center;}
+		.f{justify-content: center;align-items: flex-end;}
+		.g{justify-content: flex-end;align-items: flex-end;}
+		.h{justify-content: space-between;}/*项目分在主轴两侧*/
+		.i{flex-direction: column;justify-content: space-between;}/*将主轴放立,然后分在主轴两侧*/
+		
+		.j{flex-direction: column;justify-content: space-between;align-items:center;}
+		.k{flex-direction: column;justify-content: space-between;align-items: flex-end;}
+		.l{display: flex;}
+		.la{align-self: auto;}
+		.lb{align-self: center;}
+		.m{display: flex;justify-content: space-between;}/*项目分在主轴两侧*/
+		.ma{align-self: auto;}
+		.mb{align-self: flex-end;}
+		.n{display: flex;}
+		.na{align-self: auto;}
+		.nb{align-self: center;}
+		.nc{align-self: flex-end;}
+		.o{display: flex;flex-wrap: wrap;justify-content: flex-end;align-content: space-between;}/*超出换行 从主轴尾巴开始 主轴分在交叉轴两侧*/
+		
+		.p{display: flex;flex-wrap: wrap;align-content: space-between;}/*超出换行 项目分在交叉轴两侧*/
+		.pa,.pb{display: flex; flex-basis: 100%;justify-content: space-between;}/* （行盒子）  项目占据主轴空间100% 项目分在主轴两侧*/
+		
+		.q{flex-wrap: wrap;align-content: space-between;}/*换行 主轴分在交叉轴两侧*/
+		.r{display: flex;  flex-direction: column; flex-wrap: wrap; align-content: space-between;}
+		.ra{margin-top: 5px;}
+
+		.s{display: flex;flex-wrap: wrap;}
+		.sa{flex-basis: 100%; display: flex;}
+		.sb{flex-basis: 100%; justify-content: center;display: flex;}
+		.sc{flex-basis: 100%; justify-content: space-between; display: flex;}
+		
+		.t{flex-wrap: wrap;display: flex;padding:5px;}
+
+		.u{display: flex;flex-wrap: wrap;}
+		.ua{display: flex;flex-basis: 100%;justify-content: flex-end;margin: 5px;}
+		.ub{display: flex;flex-basis: 100%;justify-content:flex-start; }
+		.uc{display: flex;flex-basis: 100%; justify-content: flex-end;}
+
+	</style>
+</head>
+
+<body>
+	<div class="root">
+		<div class="a">
+			<span></span>
+		</div>
+
+		<div class="b">
+			<span></span>
+		</div>
+
+		<div class="c">
+			<span></span>
+		</div>
+
+		<div class="d">
+			<span></span>
+		</div>
+
+		<div class="e">
+			<span></span>
+		</div>
+
+		<div class="f">
+			<span></span>
+		</div>
+
+		<div class="g">
+			<span></span>
+		</div>
+
+		<div class="h">
+			<span></span>
+			<span></span>
+		</div>
+
+		<div class="i">
+			<span></span>
+			<span></span>
+		</div>
+
+</div>
+
+<br>
+<br>
+
+<div class="root">
+
+	<div class="j">
+		<span></span>
+		<span></span>
+	</div>
+
+	<div class="k">
+		<span></span>
+		<span></span>
+	</div>
+
+	<div class="l">
+		<span class="la"></span>
+		<span class="lb"></span>
+	</div>
+
+	<div class="m">
+		<span class="ma"></span>
+		<span class="mb"></span>
+	</div>
+
+	<div class="n">
+		<span class="na"></span>
+		<span class="nb"></span>
+		<span class="nc"></span>
+	</div>
+
+	<div class="o">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+
+	<div class="p">
+		<div class="pa">
+		    <span ></span>
+		    <span ></span>
+		</div>
+
+		<div class="pb">
+		    <span ></span>
+		    <span ></span>
+		</div>
+	</div>
+
+	<div class="q">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+
+	<div class="r">
+		<span class="ra"></span>
+		<span class="ra"></span>
+		<span class="ra"></span>
+		<span class="ra"></span>
+		<span class="ra"></span>
+		<span class="ra"></span>		
+	</div>
+
+</div>
+
+
+<br>
+<br>
+
+<div class="tail">
+	<div class="s">
+		<div class="sa">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<div class="sb">
+			<span></span>
+		</div>
+		<div class="sc">
+			<span></span>
+			<span></span>
+		</div>
+
+	</div>
+
+	<div class="t">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+
+	<div class="u">
+		<div class="ua">
+			<span></span>
+			<span></span>
+		</div>
+
+		<div class="ub">
+			<span></span>
+			<span></span>
+		</div>
+
+		<div class="uc">
+			<span></span>
+		</div>
+	</div>
+
+</div>
+
+</body>
+</html>
