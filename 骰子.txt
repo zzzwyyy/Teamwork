@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  height: 400px;
+  background-color: purple;
+  border-radius: 10px;
+  text-align: center;
+
+}
+
+.row{
+  flex-basis: 100%;
+  display:flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.row:nth-child(2){
+  justify-content: center;
+  align-content: center;
+  justify-content:space-between;
+}
+
+.row:nth-child(3){
+  justify-content: space-between;
+  align-content: center;
+}
+.item{
+	width: 30px;
+    height: 30px;
+    margin: 50px;
+    background-color: pink;
+    border-radius: 50%;
+}
+
+</style>
+</head>
+<body>
+	<div class="box">
+  <div class="row">
+    <span class="item">.</span>
+    <span class="item">.</span>
+     <span class="item">.</span>
+  </div>
+  <div class="row">
+    <span class="item">.</span>
+    
+    	<span class="item">.</span>
+        <span class="item">.</span>
+    
+  </div>
+  <div class="row">
+     <span class="item">.</span>
+     <span class="item">.</span>
+     <span class="item">.</span>
+    
+  </div>
+ 
+</div>
+
+</body>
+</html>
