@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" class="input">
+    <button class="set">设置</button>
+    <button class="get">获取</button>
+    <button class="del">删除</button>
+    <button class="delall">删除全部</button>
+    <script>
+        var input = document.querySelector(".input");
+        var set = document.querySelector(".set");
+        var get = document.querySelector(".get");
+        var del = document.querySelector(".del");
+        var delall = document.querySelector(".delall");
+        set.addEventListener("click", function() {
+            var val = input.value;
+            sessionStorage.setItem("uname", val);
+        })
+        get.addEventListener("click", function() {
+            console.log(sessionStorage.getItem("uname"));
+
+        })
+        del.addEventListener("click", function() {
+            sessionStorage.removeItem('uname');
+            sessionStorage.clear();
+
+        })
+    </script>
