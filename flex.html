@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>flex布局</title>
+	<style type="text/css">
+		.b1,.b2,.b3,.b4,.b5,.b6,.b7,.b8{
+			width: 100px;
+			height: 100px;
+			background-color: black;
+			border-radius: 10px;
+			display: flex;
+		}
+		span{
+			width: 30px;
+			height: 30px;
+			background-color: white;
+			border-radius: 50%;
+		}
+		.b1{
+			justify-content:center; 
+			align-items: center;
+		}
+		.b2{
+			justify-content: space-between;
+			align-items: center;
+		}
+		.b3{
+			justify-content: space-between;
+		}
+		.s31{
+			justify-content: flex-end;
+			align-self: flex-end;
+		}
+		.s41{
+			justify-content: center;
+			align-self: center;
+		}
+		.s42{
+			justify-content: flex-end;
+			align-self: flex-end;
+		}
+		.b5{
+			justify-content: center;
+		}
+		.b6{
+			
+			align-content: space-between;
+			flex-wrap: wrap;
+		}
+		.b61,.b62{
+			display: flex;
+			flex-basis: 100%;
+			justify-content: space-between;
+		}
+		.b7{
+			align-content: space-between;
+			flex-wrap: wrap;
+		}
+		.b71,.b72{
+			display: flex;
+			flex-basis: 100%;
+			justify-content: space-between;
+		}
+		.b73{
+			display: flex;
+			flex-basis: 100%;
+			justify-content: center;
+			align-self: center;
+		}
+		.b8{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+</style>
+</head>
+<body>
+	<!--一个点-->
+	<div class="b1">
+		<span></span>
+	</div>
+	<!--2个点-->
+	<div class="b2">
+		<span></span>
+		<span></span>
+	</div>
+
+	<div class="b3">
+		<span></span>
+		<span class="s31"></span>
+	</div>
+	<!--3个点-->
+	<div class="b4">
+		<span></span>
+		<span class="s41"></span>
+		<span class="s42"></span>
+	</div>
+	<div class="b5">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+	<!--4个点-->
+	<div class="b6">
+		<div class="b61">
+			<span></span>
+			<span></span>
+		</div>
+		<div class="b62">
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<!--5个点-->
+	<div class="b7">
+		<div class="b71">
+			<span></span>
+			<span></span>
+		</div>
+		<div class="b73">
+			<span></span>
+		</div>
+		<div class="b72">
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<!--9个点-->
+	<div class="b8">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+
+</body>
+</html>
