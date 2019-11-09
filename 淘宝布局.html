@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>淘宝布局</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{margin: 0;
+			padding: 0;}
+		body{min-width: 700px;}
+		.header,.footer{
+			float: left;
+			width: 100%;
+			height: 60px;
+			background-color: #ddd;
+			line-height: 40px;
+			text-align: center;
+		}
+		.sub,
+		.main,
+		.extra{
+			float: left;
+			min-height: 350px;
+			
+		}
+		.main{width: 100%;}
+		.main-inner{
+			margin-left: 300px;
+			margin-right: 300px;
+			background-color: green;
+		   height: 350px;
+		 
+		}
+		
+
+		
+		.zhong{width: 90%;
+			height: 350px;
+			background-color: white;
+			margin: 0 auto;
+			border-radius: 30px;
+
+		}
+		.sub{
+			width: 300px;
+			background-color: red;
+			margin-left: -100%;
+		}
+		.extra{
+			width: 300px;
+			background-color: red;
+			margin-left: -300px;
+		}
+		
+		.sh{
+			width: 100%;
+			height: 50px;
+			background-color: blue;
+			display: flex;
+			justify-content: space-around;
+		}
+		.two{width: 50px;
+			height: 20px;
+			margin: 15px;
+			background-color: red;
+			border-radius: 5px;}
+		.l{width: 200px;
+			height: 100px;
+			margin: 50px;
+			border-radius: 20px;
+			background-color: grey;
+			align-self: center;}
+		.lala{
+			height: 200px;
+			background-color: pink;
+		}
+		.lalala{width: 90%;
+			height: 90%;
+			background-color: white;
+			margin: auto auto;
+			border-radius: 20px;}
+
+		.li{
+			width: 100%;
+			height: 250px;
+			background-color: pink;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		.ly{width:95%;
+			height: 95%;
+			border-radius: 20px;
+			background-color: white;
+			margin: auto auto;
+
+			}
+		.lo{
+			width: 100%;
+			height: 50%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+		.lili{
+			width: 100px;
+			height: 80px;
+			border-radius: 20%;
+			margin: 10px;
+			background-color: blue;
+
+		}
+	.yi{height: 200px;
+		width: 100%;
+		background-color: pink;
+		overflow: hidden;
+		display: flex;
+		justify-content: space-around;
+
+	}
+	.yin{float: left;
+		width: 650px;
+		height: 160px;
+		border-radius: 20px;
+		background-color: white;
+		margin: 20px;
+
+	}
+	.foot{width: 100%;
+		height: 100px;
+		background-color: #ddd;
+		display: flex;
+		justify-content: space-around;
+		
+		}
+	.lil{width:100px;
+	height: 50px;
+	background-color: #fff; 
+    margin: auto auto;
+    }
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div align="center">
+		<form>
+			<table>
+				<tr>
+					<td><input type="text" name="text"></td>
+					<td><input type="submit" name="搜索" value="搜索"></td>
+				</tr>
+			</table>
+		</form>
+		</div>
+	</div>
+
+	<div class="sh">
+		<span class="two">首页</span>
+		<span class="two">食品</span>
+		<span class="two">女装</span>
+		<span class="two">美妆</span>
+		<span class="two">保健</span>
+		<span class="two">生鲜</span>
+	</div>
+
+	<div class="lala">
+		<div class="lalala"></div>
+	</div>
+
+	<div class="main">
+		<div class="main-inner">
+			<div class="one">
+			   <div class="zhong"></div>
+            </div>
+		</div>
+	</div>
+	<div class="sub">
+		<div class="l"></div>
+		<div class="l"></div>
+	</div>
+	<div class="extra">
+		<div class="l"></div>
+		<div class="l"></div>
+	</div>
+
+	<div class="li">
+		<div class="ly">
+		<div class="lo">
+		<span class="lili"></span>
+		<span class="lili"></span>
+		<span class="lili"></span>
+		<span class="lili"></span>
+		<span class="lili"></span>
+		</div>
+		<div class="lo">
+		<span class="lili"></span>
+		<span class="lili"></span>
+		<span class="lili"></span>
+		<span class="lili"></span>
+		<span class="lili"></span>
+		</div>
+		</div>
+	</div>
+
+	<div class="yi">
+		<div class="yin"></div>
+		<div class="yin"></div>
+	</div>
+
+	<div class="footer">
+		<div class="foot">
+			<span class="lil">推荐</span>
+			<span class="lil">微淘</span>
+			<span class="lil">消息</span>
+			<span class="lil">购物车</span>
+			<span class="lil">我的淘宝</span>
+			
+		</div>
+	</div>
+</body>
+</html>
