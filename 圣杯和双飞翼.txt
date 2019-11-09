@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>shengbeishaungfeiyi</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding:0;
+		}
+		.head{
+			background-color: blue;
+			width:100%;
+			height: 80px;
+			
+		}
+		.body{
+			margin: 0 auto;
+			width: 100%;
+			height:500px;
+			float: left;
+			position: relative;
+			background-color: silver;
+		}
+		.middle{
+			width: 100%;
+			height: 60%;
+			float: left;
+			background-color: gold;
+		}
+		.middle-main{
+			margin: 0 200px;
+			background-color:slateblue;
+			height: 500px;
+		}
+		.left{
+			width: 200px;
+			margin-left: -100%;
+			height: 60%;
+			background-color: black;
+			float: left;
+		}
+		.right{
+			width: 200px;
+			margin-left: -200px;
+			background-color: pink;
+			height: 60%;
+			float: left;
+		}
+		.foot{
+			width: 80%;
+			height: 200px;
+			background-color: skyblue;
+			overflow: hidden;
+			margin: 0 auto;
+		}
+		.foot_top{
+			width: 100%;
+			height: 100px;
+			background-color: brown;
+		}
+		.footleft{
+			width: 50%;
+			height: 100px;
+			background-color: lightgreen;
+		}
+		</style>
+</head>
+<body>
+	<div class="head"></div>
+	<div class="body">
+		<div class="middle">
+			<div class="middle-main"></div>
+		</div>
+		<div class="left"></div>
+		<div class="right"></div>
+	</div>
+	
+	<div class="foot">	
+		<div class="foot_top"></div>
+		<div class="footleft"></div>
+	</div>
+	</body>
+</html>
