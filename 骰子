@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>骰子的布局</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<style type="text/css">
+		.head,.foot{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			width: 1000px;
+			height: 300px;
+			background-color: pink;
+		}
+		span{
+			background-color: white;width: 50px;
+			height: 50px;
+			border-radius:50%;
+			margin-right:5px;
+		}
+		.head .box1,.head .box2,.head .box3,.foot .box4,.foot .box5,.foot .box6{
+			width: 200px;
+			height: 200px;
+			background-color: black;
+			border-radius: 10%;
+		}
+		.head .box1{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.head .box2{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.head .box3{
+			display: flex;
+		}
+		.head .box3 .three2{
+			align-self: center;
+		}
+		.head .box3 .three3{
+			align-self: flex-end;
+		}
+		.foot .box4{
+			display: flex;
+			flex-wrap: wrap;
+			align-content: space-between;
+		}
+		.foot .box4 .box41{
+			flex-basis: 100%;
+			display: flex;
+			justify-content: space-between;
+		}
+		.foot .box5{
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.foot .box5 .box51{
+			display: flex;
+			align-content: space-between;
+			flex-basis: 100%;
+			justify-content: space-between;
+		}
+		.foot .box5 .box52{
+			display: flex;
+			flex-basis: 100%;
+			justify-content: center;
+		}
+		.foot .box6{
+			display: flex;
+			flex-wrap: wrap;
+			align-content: space-between;
+		}
+		.foot .box6 .box61{
+			display: flex;
+			flex-basis: 100%;
+			justify-content: space-between;
+		}
+	</style>
+</head>
+<body>
+	<div class="head">
+		<!--单项目-->
+		<div class="box1">
+			<span class="one"></span>
+		</div>
+		<!--双项目-->
+		<div class="box2">
+			<span class="two"></span>
+			<span class="two"></span>
+		</div>
+		<!--三项目-->
+		<div class="box3">
+			<span class="three1"></span>
+			<span class="three2"></span>
+			<span class="three3"></span>
+		</div>
+	</div>
+	<hr>
+	<hr>
+	<div class="foot">
+		<!--四项目-->
+		<div class="box4">
+			<div class="box41">
+				<span class="four"></span>
+				<span class="four"></span>
+			</div>
+			<div class="box41">
+				<span class="four"></span>
+				<span class="four"></span>
+			</div>
+		</div>
+		<!--五项目-->
+		<div class="box5">
+			<div class="box51">
+				<span class="five"></span>
+				<span class="five"></span>
+			</div>
+			<div class="box52">
+				<span class="five"></span>
+			</div>
+			<div class="box51">
+				<span class="five"></span>
+				<span class="five"></span>
+			</div>
+		</div>
+		<!--六项目-->
+		<div class="box6">
+			<div class="box61">
+				<span class="six"></span>
+				<span class="six"></span>
+				<span class="six"></span>
+			</div>
+			<div class="box61">
+				<span class="six"></span>
+				<span class="six"></span>
+				<span class="six"></span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
