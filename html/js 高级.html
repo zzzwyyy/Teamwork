@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // class Star {
+        //     constructor(uname, age) {
+        //         this.uname = uname;
+        //         this.age = age;
+        //     }
+        // }
+        // var ldh = new Star("liudehua", 20);
+        // var zxy = new Star("zhangxueyou", 18);
+        // console.log(ldh);
+        // console.log(zxy);
+        class Father {
+            constructor(x, y) {
+                    this.x = x;
+                    this.y = y;
+
+                }
+                // subtract(){
+
+            // }
+            sum() {
+                console.log(this.x + this.y);
+
+            }
+        }
+
+        class Son extends Father {
+            constructor(x, y) {
+                super(x, y)
+            }
+
+        }
+        // var son = new Son(1, 89);
+        var father = new Father(2, 6)
+        father.sum()
+    </script>
+
+</body>
+
+</html>
