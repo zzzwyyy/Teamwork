@@ -1,0 +1,171 @@
+<html>
+<head>
+	<title>西安邮电大学官方网站</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<!--head-->
+	<div class="header">
+		<div class="logo">
+			<img src="官网图片/6.png" alt="logo">
+		</div>
+		<div class="nav">
+			<ul>
+				<li>设为首页</li>
+				<li>加入收藏</li>
+				<li>网站地图</li>
+				<li>中文</li>
+				<li>ENGLISH</li>
+			</ul>
+		</div>
+	</div>
+	<!--bottom-->
+	<div class="clear"></div>
+	<div class="main">
+		<div class="subnav">
+				<p>首页</p>
+				<p>学校概况</p>
+				<p>机构设置</p>
+				<p>人才培养</p>
+				<p>师资队伍</p>
+				<p>学科建设</p>
+				<p>科学研究</p>
+				<p>招生就业</p>
+				<p>合作交流</p>
+				<p>校园生活</p>
+				<p>本周会议</p>
+				<p>信息服务</p>
+				<p>西邮校友</p>
+		</div>
+		<div class="middle">
+			<img src="官网图片/1.png">
+		</div>
+		<div class="word">
+			<div class="school">
+				<div class="title">西邮要闻</div>
+				<hr/>
+				<div>
+					<img src="官网图片/3.png">
+				</div>
+					<ul>
+						<li>“不忘初心，牢记使命”主题教育专栏
+						</li>
+						<li>校长范九伦主持召开2019年第16次校长办公会
+						</li>
+					</ul>
+			</div>
+			<div class="synthesis">
+				<div class="title">综合新闻</div>
+				<hr/>
+				<ul>
+					<li>11-01通信与信息工程学院举办心理健康讲座</li>
+					<li>11-01“弘扬西迁精神 争做时代先锋”——学...</li>
+					<li>10-31学工部举办“学长学姐面对面”国家奖...</li>
+					<li>10-31电子工程学院朱礼鹏博士在《Physical ...</li>
+					<li>10-31【“不忘初心、牢记使命”主题教育专...</li>
+					<li>10-31我校青年志愿者赴西安高校开展青少年...</li>
+					<li>10-30我校邀请逻辑代数和模糊数学领域三位...</li>
+					<li>10-30我校获得2019年中国大学生男子五人制...</li>
+					<li>10-30【“不忘初心、牢记使命”主题教育专...</li>
+				</ul>
+			</div>
+			<div class="media">
+				<div class="title"  >媒体关注</div>
+				<hr/>
+				<ul>
+					<li>【西部网】国际范儿！西安邮电大学第一...2019-10-31</li>
+					<li>【陕西省教育厅】西安邮电大学多举措积...2019-10-31</li>
+					<li>【陕西省教育厅】陕西教育系统推进不...2019-10-31</li>
+					<li>【陕西省教育厅】西安邮电大学电商教学...2019-10-31</li>
+					<li>【西部网】西邮学子军运会夺得男子50公...2019-10-31</li>
+					<li>【西部网】西安邮电大学获2018年度“双...2019-10-31</li>
+				</ul>
+			</div>
+		</div>
+		<div class="box">
+			<img src="官网图片/8.PNG">
+		</div>
+		<div class="foot">
+			<div class="notes">
+				<div class="tltle">通知公告</div>
+				<hr/>
+				<ul>
+					<li>30/10关于举办《不忘初心，牢记使命 准确... </li>
+					<li>30/10招标结果公示（社会实践奖品）</li>
+					<li>30/10招标结果公示（学校宣传片）</li>
+					<li>30/10招标结果公示（校庆专题片）</li>
+					<li>30/10关于2019年消防培训演练通知</li>
+					<li>30/10关于举办“武当文化高校行” ——武...</li>
+					<li>25/10关于举办“全国信息通信类高校经管... </li>
+					<li>25/10招标公告 </li>
+				</ul>
+			</div>
+			<div class="message">
+				<div class="tltle">学术信息</div>
+				<hr/>
+				<ul>
+					<li>31 关于举办胡红钢教授学术报告<br>
+						各部门，各单位：应我校网络空间安全学院
+					</li>
+					<li>31 举办马文平、何德彪、夏<br>
+						各部门，各单位：应我校网络空间安全学院
+					</li>
+					<li>30 关于举办刘继明教授学术报告<br>
+						各部门，各单位：应我校通信与信息工程学院
+					</li>
+					<li>30 关于举办史志诚教授学术报告<br>
+						各部门，各单位：应我校经济与管理学院
+					</li>
+				</ul>
+			</div>
+			<div class="subject">
+				<div class="tltle">专题栏</div>
+				<hr/>
+				<table align="center">
+					<tr>
+						<td>本科生招生</td><td>研究生招生</td>
+					</tr>
+					<tr>
+						<td>招聘专栏</td><td>就业指南</td>
+					</tr>
+					<tr>
+						<td>信息直通车</td><td>财务信息公开</td>
+					</tr>
+					<tr>
+						<td>网站评比</td><td>信息公开</td>
+					</tr>
+				</table>
+				<div>
+					<img src="官网图片/7.png">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<!--foot-->
+	<div class="footer">
+		<div class="address">
+			<ul>
+				<li>雁塔校区<br>
+					电话：029-85383106<br>
+					邮政编码：710061<br>
+					雁塔校区地址：西安市长安南路563号
+				</li>
+				<li>
+					长安校区<br>
+					电话：029-88166105<br>
+					邮政编码：710121<br>
+					长安校区地址：西安市长安区西长安街618号
+				</li>
+			</ul>
+		</div>
+		<div class="xiaohui">
+			<img src="官网图片/4.png">
+		</div>
+		<div class="erweima">
+			<img src="官网图片/5.png">
+		</div> 
+	</div>
+</body>
+</html>
