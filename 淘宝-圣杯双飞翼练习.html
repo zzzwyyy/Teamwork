@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>淘宝</title>
+	<style type="text/css">
+		*{margin: 0px;padding: 0px;}
+		p{font-weight: bold;color: white;font-size: 25px;}
+		.header{min-height: 100px;width: 100%; background-color: rgb(250,80,45);}/*页眉*/
+		.footer{min-height: 100px;width: 100%; background-color: rgb(255,204,102);}/*页脚*/
+		.llist{height: 70px;width: 100%;background-color: rgb(250,80,45);}/*导航栏列表*/
+		.list{width: 100%;height: 50px; border:none;margin: 0px;padding: 0px;text-align: center;}/*导航栏*/
+
+		.banner{width: 100%;height: 500px;background-color: rgb(250,80,45);}
+		.pic{max-width: 100% ;height: 490px;background-color: white;border-radius: 10px;margin: 0 5px 0 5px;}
+
+		.heart{width: 100%;height: 500px; padding: 0px;overflow: hidden;background-color: rgb(250,80,45);}/*！！！双飞翼布局填充会出问题！！！圣杯布局较好*/
+		.middle,.left,.right{float: left;height:500px;background-color: rgb(250,80,45);border-radius: 10px;}
+		.middle{width: 100%; background-color: gray;}
+		.left{width:350px;background-color: red; margin-left: -100%;padding:15px 0px 10px 0px;
+			display: flex;flex-direction: column;justify-content: space-between;align-items: center;}/*下填充有问题*/
+		.right{width: 350px;background-color: blue; margin-left: -350px;padding:15px 0px 10px 0px;
+		display: flex;flex-direction: column;justify-content: space-between;align-items: center;}
+		.content{margin: 0px 350px 0px 350px;}
+
+		.smallbox{width:330px;height:230px;flex-wrap:wrap;background-color:yellow;}/*左右两栏内盒子*/
+
+		.menu{height: 400px;width: 100%;background-color: rgb(250,80,45);padding:15px 0 10px 0;}/*10功能菜单*/
+		.menubox{max-width: 100% ;height:400px;background-color: white;border-radius: 10px;margin: 0 5px 0 5px;}/*菜单盒子*/
+		.key{height:180px;width:200px;background-color: gray;}
+		.pk{display: inline-block;width: 100%;height: 40px;background-color: black;margin-top: 140px;}
+
+		.a{width: 100%;height:400px;background-color: rgb(250,80,45)}
+		.aa{position: relative;left: 20px;}
+		.a1{float: left; width:46%;height: 390px; background-color: gray;margin-left: 20px;margin-right: 40px;}
+		.a2{float: left; width:46%;height: 390px; background-color: gray;margin-right:20px; }
+
+		.flist{height:100px;}/*页脚列表*/
+		.fkey{height:90px;width: 90px;background-color: gray;}
+	</style>
+</head>
+
+
+<body>
+<div class="header"></div>
+
+<div class="main">
+	<div class="llist">
+		<table class="list">
+			<tr>
+				<td><p>首页</p></td>
+				<td><p>食品</p></td>
+				<td><p>女装</p></td>
+				<td><p>美妆</p></td>
+				<td><p>保健</p></td>
+				<td><p>生鲜</p></td>
+			</tr>
+		</table>
+	</div>
+
+<div class="banner">
+	<div class="pic"></div>
+</div>
+
+<div class="heart">
+	<div class="middle">
+		<div class="content"></div>
+	</div>
+	<div class="left">
+		<div class="smallbox"></div>
+		<div class="smallbox"></div>
+	</div>
+	<div class="right">
+		<div class="smallbox"></div>
+		<div class="smallbox"></div>
+	</div>
+</div>
+
+<div class="menu">
+<div class="menubox">
+	<table border="0" cellpadding="10" cellspacing="10" width="100%" height="100%" >
+		<tr>
+			<td align="center"><div class="key"><p class="pk"></p></div></td>
+			<td align="center"><div class="key"><p class="pk"></p></div></td>
+			<td align="center"><div class="key"><p class="pk"></p></div></td>
+			<td align="center"><div class="key"><p class="pk"></p></div></td>
+			<td align="center"><div class="key"><p class="pk"></p></div></td>
+		</tr>
+
+		<tr>
+			<td align="center"><div class="key"><p class="pk"></p></div></td>
+			<td align="center"><div class="key"><p class="pk"></p></div></td>
+			<td align="center"><div class="key"><p class="pk"></p></div></td>
+			<td align="center"><div class="key"><p class="pk"></p></div></td>
+			<td align="center"><div class="key"><p class="pk"></p></div></td>
+		</tr>
+	</table>
+</div>
+</div>
+	
+<div class="a">
+	<div class="aa">
+	<div class="a1"></div>
+	<div class="a2"></div>
+	</div>
+</div>
+
+</div>
+<div class="footer">
+	<table class="flist" border="1" cellpadding="0" cellspacing="0" width="100%" >
+		<tr>
+			<td align="center"><div class="fkey"></div></td>
+			<td align="center"><div class="fkey"></div></td>
+			<td align="center"><div class="fkey"></div></td>
+			<td align="center"><div class="fkey"></div></td>
+			<td align="center"><div class="fkey"></div></td>
+		</tr>
+	</table>
+</div>
+
+
+</body>
+</html>
