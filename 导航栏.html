@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>导航栏</title>
+	<style type="text/css">
+		*{margin: 0;
+			padding: 0;}
+		.page{
+			width: 200px;
+			height: auto;
+			position: fixed;
+			left: 0;
+			top: 50%;
+			margin-top: -103px;/*垂直居中*/
+		}
+		.nav-li{
+			width: 200px;
+			height: auto;
+			border: 1px solid blue;
+			background-color: pink;
+			text-align: center;
+			font-size: 22px;
+			font-family: 宋体;
+			
+		}
+		.nav-li ul{
+			width: 200px;
+			height: auto;
+			background-color: #fff;
+			display: none;
+	
+		}
+		.nav-li ul li{
+			width: 200px;
+			height: 40px;
+			border-bottom: 1px dashed #666;
+			text-align: center;
+			background-color: #ccc;
+			line-height: 40px;
+			cursor: pointer;/*改变鼠标形状*/
+			position: relative;
+		}
+		.nav-li:hover ul{
+			display: block;
+		}/*hover:伪类 */
+		.list3{
+			width: 200px;
+			height: auto;
+			position: absolute;
+			left: 200px;
+			top: 0;
+			display: none;
+		}
+		.li3{
+			width: 200px;
+			height: 40px;
+			background-color: #444;
+			text-align: center;
+			line-height: 40px;
+			color: #fff;
+		}
+		.nav-li ul li:hover  .list3{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class="page">
+
+			<div class="nav">
+				<div class="nav-li">
+				<div >导航栏</div>
+				<ul>
+					<li>
+						二级栏目
+						<div class="list3">
+							<div class="li3">三级栏目</div>
+							<div class="li3">三级栏目</div>
+							<div class="li3">三级栏目</div>
+						</div>
+					</li>
+				</ul>
+				<ul>
+					<li>二级栏目
+						<div class="list3">
+							<div class="li3">三级栏目</div>
+							<div class="li3">三级栏目</div>
+							<div class="li3">三级栏目</div>
+						</div>
+					</li>
+				</ul>
+				<ul>
+					<li>二级栏目</li>
+				</ul>
+			</div>
+			<div class="nav-li">
+				<div >导航栏</div>
+				<ul>
+					<li>二级栏目</li>
+				</ul>
+				<ul>
+					<li>二级栏目</li>
+				</ul>
+				<ul>
+					<li>二级栏目</li>
+				</ul>
+			</div>
+			<div class="nav-li">
+				<div >导航栏</div>
+				<ul>
+					<li>二级栏目</li>
+				</ul>
+			</div>
+			<div class="nav-li">
+				<div >导航栏</div>
+				<ul>
+					<li>二级栏目</li>
+				</ul>
+			</div>
+			<div class="nav-li">
+				<div >导航栏</div>
+				<ul>
+					<li>二级栏目</li>
+				</ul>
+			</div>
+			</div>
+			
+	</div>
+</body>
+</html>
