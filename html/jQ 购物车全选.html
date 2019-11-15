@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+        input {
+            display: block;
+        }
+        
+        div input {
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div><input type="checkbox" class="all"> <span>全选</span></div>
+    <input type="checkbox" class="jcheckbox">
+    <input type="checkbox" class="jcheckbox">
+    <input type="checkbox" class="jcheckbox">
+    <script>
+        // 购物车全选按钮
+        $(function() {
+            $('.all').change(function() {
+                $('.jcheckbox').prop('checked', $(this).prop('checked'))
+            })
+            $('.jcheckbox').change(function() {
+                if ($('.jcheckbox:checked').length === $('.jcheckbox').length) {
+                    $('.all').prop('checked', true)
+                } else {
+                    $('.all').prop('checked', false)
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>
