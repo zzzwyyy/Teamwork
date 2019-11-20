@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>盒马鲜生首页</title>
+	<style type="text/css">
+		*{margin: 0px;padding: 0px;}
+		.header{width: 100%;height: 100px;background-color: rgb(90,194,249);}
+		.location,.find,.glass{float: left;}
+		.location{width: 50px;height: 50px;position:absolute;left: 25px;top: 25px;}
+		.find{width: 950px;height: 70px;background-color:white;position:absolute;left: 150px;top:15px;border-radius: 35px;}
+		.glass{width: 50px;height: 50px;position:relative;left: 10px;top: 10px;}
+		.message{width: 50px;height: 50px;float: right;position: absolute;right:75px;top: 25px;}
+		.use{width: 50px;height: 50px;float: right;position: absolute;right:175px;top: 25px;}
+
+		.main{width: 100%;height: 600px;background-color: rgb(245,245,245);}
+		.middle{width: 90%;height:auto;margin: 0 auto;}
+		.nav{width: 100%;height: 560px;}
+		.tr1{width: 20%;height:280px;text-align: center;}
+		.navbox{width:260px;height:280px;position: relative;left: 5px;top: 0px;}
+		.navword{width: 100%;height: 40px;font-size: 38px;line-height:30px;font-weight: bolder;}
+
+		.imp{width: 100%;height: 400px;background-color: pink;margin-top: 50px;text-align: center;background:url(背景菊花.jpg);border-radius: 30px;}
+		.imp1{width: 20%;height: 200px;position: relative;left:60px;top: 10px;float: left;clear:both;}
+		.imp2{width: 13%;height: 40px;position: relative;left:60px;top: 160px; float: left;}
+		.imp3{width: 25%;height: 60px;position:relative;left: -32%;top: 260px; float: left;margin-left: 20px;margin-top: -30px;}
+		.imp4{width: 42%;height: 60px;position:relative;left: -32%;top: 280px;margin-left: 20px;float: left;}
+		.imp5{width: 12%;height: 55px;background-color:white;float: left;position: relative;right:45%;bottom: -200px;border-radius: 30px;
+			color:rgb(88,200,250);line-height: 55px;font-size: 40px;text-align: center; }
+		.imp1word{display: inline-block;height: 200px; font-size: 230px;font-weight: bolder;line-height:180px;color: white}
+		.imp2word{display: inline-block;height: 40px;font-size: 38px;line-height: 40px;color: white}
+		.imp3word{display: inline-block;height: 60px;font-size: 50px;line-height: 50px;color: white}
+		.imp4word{display: inline-block;height: 55px;font-size: 50px;line-height: 60px;color: white}
+		.imppic{width: 50%; height: 360px;background-color:white;clear: both;float: right;margin-top: -180px;border-radius: 20px;}
+		.imppic1{width: 45%;height: 360px;float: left;margin-left: 15px;margin-right: 15px;border-radius: 20px;}
+		.imppic2{width: 45%;height: 360px;float:right;margin-right: 30px;border-radius: 20px;}
+		.impword{width: 100%;height: 60px;font-size: 40px;line-height:40px;font-weight: bolder;font-family: '幼圆'}
+
+		.last{width: 100%;height: 500px;margin-top: 40px;padding-bottom: 20px;}
+		.last1{width: 49%;height: 500px;background-color: pink;float: left;border-top-left-radius: 30px;border-bottom-left-radius: 30px;}
+		.last2{width: 49%;height: 500px;background-color: orange; float: right;border-top-right-radius: 30px;border-bottom-right-radius: 30px;}
+
+		.footer{width: 100%;height: 100px;background-color: white;border-top: 1px black solid}
+		.logo{width:80px;height: 80px;position:relative;left: 80px;top: 10px;float: left;}
+		.footnav{width: 70%;height: 100px;float: right;margin-right: 100px;}
+		.tr2{width: 25%;height: 100px;}
+		.footnavbox{width:100px;height: 100px;position: relative;left:130px;text-align:center;}
+		.footnavword{width: 100%;height: 20px;font-size: 20px;line-height: 20px;font-weight: bold;color: gray}
+	</style>
+</head>
+
+<body>
+	<div class="header">
+		<div class="location"><img src="位置.jpg" width="50px" height="50px"></div>
+		<div class="find">
+			<div class="glass"><img src="放大镜.jpg" width="50px" height="50px"></div>
+		</div>
+		<div class="message"><img src="消息.jpg" width="50px" height="50px"></div>
+		<div class="use"><img src="盒马.jpg" width="50px" height="50px"></div>
+	</div>
+
+	<div class="main">
+		<div class="banner"><img src="banner.jpg" width="100%" height="100%"></div>
+
+		<div class="middle">
+			<div class="nav">
+				<table cellspacing="10" cellpadding="1" border="0" width="100%">
+					<tr class="tr1">
+						<td>
+							<div class="navbox">
+								<img src="水果.jpg" width="100%" height="240px">
+								<div class="navword">时令水果</div>
+							</div>
+						</td>
+
+						<td>
+							<div class="navbox">
+								<img src="蔬菜.jpg" width="100%" height="240px">
+								<div class="navword">新鲜蔬菜</div>
+							</div>
+						</td>
+						<td>
+							<div class="navbox">
+								<img src="肉.jpg" width="100%" height="240px">
+								<div class="navword">肉禽蛋类</div>
+							</div>
+						</td>
+						<td>
+							<div class="navbox">
+								<img src="海鲜.jpg" width="100%" height="240px">
+								<div class="navword">海鲜水产</div>
+							</div>
+						</td>
+						<td>
+							<div class="navbox">
+								<img src="速食.jpg" width="100%" height="240px">
+								<div class="navword">速食冻品</div>
+							</div>
+						</td>
+					</tr>
+					<tr class="tr1">
+						<td>
+							<div class="navbox">
+								<img src="熟食.jpg" width="100%" height="240px">
+								<div class="navword">餐饮熟食</div>
+							</div>
+						</td>
+						<td>
+							<div class="navbox">
+								<img src="零食.jpg" width="100%" height="240px">
+								<div class="navword">粮油零食</div>
+							</div>
+						</td>
+						<td>
+							<div class="navbox">
+								<img src="酒水.jpg" width="100%" height="240px">
+								<div class="navword">酒水饮料</div>
+							</div>
+						</td>
+						<td>
+							<div class="navbox">
+								<img src="百货.jpg" width="100%" height="240px">
+								<div class="navword">美护百货</div>
+							</div>
+						</td>
+						<td>
+							<div class="navbox">
+								<img src="烘焙.jpg" width="100%" height="240px">
+								<div class="navword">乳品烘焙</div>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<div class="imp">
+
+				<div class="imp1"><p class="imp1word">15</p></div>
+				<div class="imp2"><p class="imp2word">th&nbsp;&nbsp;Nov.</p></div>
+				<div class="imp3"><p class="imp3word">今天吃什么</p></div>
+				<div class="imp4"><p class="imp4word">菊花一入菜&nbsp;&nbsp;清香扑鼻来</p></div>
+				<div class="imp5">时令</div>
+
+				<div class="imppic">
+					<div class="imppic1">
+						<img src="花.jpg" width="100%" height="300px">
+						<div class="navword">￥39</div>
+					</div>
+					<div class="imppic2">
+						<img src="菊花.jpg" width="100%" height="300px">
+						<div class="navword">￥28</div>
+					</div>
+				</div> 
+			</div>
+
+			<div class="last">
+				<div class="last1"></div>
+				<div class="last2"></div>
+			</div>
+		
+	</div>
+
+	<div class="footer">
+		<div class="logo"><img src="logo.jpg" width="100%" height="100%" ></div>
+		<div class="footnav">
+			<table border="0" cellpadding="0" cellspacing="0" width="100%">
+				<tr >
+					<td>
+						<div class="footnavbox">
+							<img src="分类.jpg" width="100%" height="80px;">
+								<div class="footnavword">分类</div>
+						</div>
+					</td>
+					<td>
+						<div class="footnavbox">
+							<img src="盒子.jpg" width="100%" height="80px;">
+								<div class="footnavword">盒区生活</div>
+						</div>
+					</td>
+					<td>
+						<div class="footnavbox">
+							<img src="购物车.jpg" width="100%" height="80px;">
+								<div class="footnavword">购物车</div>
+						</div>
+					</td>
+					<td>
+						<div class="footnavbox">
+							<img src="我的.jpg" width="100%" height="80px;">
+								<div class="footnavword">我的</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+</body>
+</html>
