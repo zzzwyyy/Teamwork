@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>个人资料</title>
+</head>
+<body>
+	
+	<h1 align="center"><ins>请留下个人资料</ins></h1>
+	<form >
+		<table align="center">
+			<tr>
+				<td align="right" >姓名：</td>
+				<td><input type="text" name="username" maxlength="5"></td>
+			</tr>
+			<tr>
+				<td align="right">电话：</td>
+				<td><input type="text" name="phone" maxlength="11" value="" id="ph" ></td>
+			</tr>
+			<tr>
+				<td align="right">E-mail:</td>
+				<td><input type="post" name="email" value="@163.com"></td>
+			</tr>
+			<tr>
+				<td align="right">性别：</td>
+				<td><input type="radio" name="sex" value="man">男
+					<input type="radio" name="sex" value="woman">女
+				</td>
+			</tr>
+			<tr>
+				<td align="right">年龄:</td>
+				<td>
+					<select>
+						<option value="20以下">20以下</option>
+						<option value="20-30">20-30</option>
+						<option value="30-40">30-40</option>
+						<option value="40-50">40-50</option>
+						<option value="50-60">50-60</option>
+						<option value="60以上">60以上</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td align="right">留言板：</td>
+				<td>
+					<textarea name="留言" rows="3" cols="40" placeholder="可不填写"></textarea>
+				</td>
+		   </tr>
+			<tr>
+				<td align="right">您的爱好：</td>
+				<td><input type="checkbox" name="ah1" value="soprt" checked>运动
+					<input type="checkbox" name="ah2" value="read">阅读
+					<br>
+					<input type="checkbox" name="ah3" value="listen">听音乐
+					<input type="checkbox" name="ah4" value="tour">旅游
+				</td>
+			</tr>
+			<tr align="center">
+				<td colspan="2">
+					<input type="submit" name="submit" value="提交" id="sub" onclick="submit">
+					<input type="reset" name="reset" value="全部重写">
+				</td>
+			</tr>
+		</table>
+	</form>
+	
+	<script type="text/javascript">
+		sub.onclick=function(submit){
+		var la = document.getElementById("ph").value;
+		if(la.length!=11){
+			alert("请输入11位手机号码！");
+		}else{
+			if(isNaN(la)){
+				alert("号码必须是数字！！！");
+			}else{
+				alert("提交成功！");
+			}
+		}
+	}
+	</script>
+
+</body>
+</html>
