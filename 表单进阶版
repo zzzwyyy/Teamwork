@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>个人资料填写</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+	<h1 align="center">请留下个人资料</h1>
+	<form>
+		<table align="center">
+			<tr>
+				<td align="right">姓名：</td>
+				<td align="left"><input type="text" name="name" maxlength="5" size="8"></td>
+			</tr>
+			<tr>
+				<td align="right">电话：</td>
+				<td align="left"><input type="text" name="tel" maxlength="11" size="15" id="tel"></td>
+			</tr>
+			<tr>
+				<td align="right">E-mail:</td>
+				<td align="left"><input type="text" name="E-mail" placeholder="@163.com"></td>
+			</tr>
+			<tr>
+				<td align="right">性别：</td>
+				<td align="left">男<input type="radio" name="sex" value="sex">
+								 女<input type="radio" name="sex" value="sex">
+				</td>
+			</tr>
+			<tr>
+				<td align="right">年龄：</td>
+				<td align="left">
+					<select>
+						<option>--请选择--</option>
+						<option value="1-10">1-10</option>
+						<option value="11-20">11-20</option>
+						<option value="21-25">21-25</option>
+						<option value="25-30">25-30</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td align="right">留言板：</td>
+				<td align="left">
+					<textarea placeholder="可不填写" rows="5" cols="25"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td align="right">您的爱好：</td>
+				<td align="left">运动<input type="checkbox" name="habits" value="sport" checked>
+					阅读<input type="checkbox" name="habits" value="read"><br>
+					听音乐<input type="checkbox" name="habits" value="music">
+					旅游<input type="checkbox" name="habits" value="travel">
+				</td>
+			</tr>
+			<tr align="center">
+				<td><input type="submit" value="提交" id="sub"></td>
+				<td><input type="reset" value="全部重写"></td>
+			</tr>
+		</table>
+	</form>
+	<script type="text/javascript">
+		sub.onclick=function(submit){
+			var tel = document.getElementById("tel").value;
+			if (tel.length!=11){
+				alert("请输入11位电话号");
+				}
+			else{
+				alert("提交成功");
+				}
+			}
+	</script>
+</body>
+</html>
