@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content= "text/html;charset=utf-8" />
+	<title>个人资料</title>
+</head>
+<body>
+	<h1 align="center"><b><ins>请留下个人资料</ins></b></h1>
+	<table align="center">
+		<tr>
+			<td align="right">姓名：</td>
+			<td><input type="text" name="name" maxlength="5"></td>
+		</tr>
+
+		<tr>
+			<td align="right">电话：</td>
+			<td ><input type="text" name="num" maxlength="11" id="tele" value=""></td>
+		</tr>
+
+		<tr>
+			<td align="right">E-mail：</td>
+			<td><input type="text" name="E-mail" value="@163.com"></td>
+		</tr>
+
+		<tr>
+			<td align="right">性别：</td>
+			<td>
+				男<input type="radio" name="men" value="men">
+				女<input type="radio" name="women" value="women">
+			</td>
+		</tr>
+
+		<tr>
+			<td align="right">年龄：</td>
+			<td>
+				<select name="age">
+					<option value="20以下">20岁以下</option>
+					<option value="20-30">20岁到30岁</option>
+					<option value="30-40">30岁到40岁</option>
+					<option value="40以上">40岁以上</option>
+				</select>
+			</td>
+		</tr>
+
+		<tr>
+			<td align="right">留言板：</td>
+			<td><textarea name="liuyan" rows="5" cols="30" placeholder="可不填写"></textarea></td>
+		</tr>
+
+		<tr>
+			<td align="right" rowspan="2">您的爱好：</td>
+			<td>
+				<input type="checkbox" name="hobby" value="sport" checked>运动 &nbsp;
+				<input type="checkbox" name="hobby" value="read">阅读
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<input type="checkbox" name="hobby" value="music">听音乐
+				<input type="checkbox" name="hobby" value="travel">旅游
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center"> 
+				<input type="submit" name="submit" id="tijiao" onclick="submit" value="提交">&nbsp;
+				<input type="reset" name="reset">
+			</td>
+		</tr>
+	</table>
+	<script type="text/javascript">
+		tijiao.onclick=function(submit){
+			var a = document.getElementById("tele").value;
+			if(a.length!=11)
+			{
+				alert("请输入十一位电话号码");
+			}else
+			{
+				if(isNaN(a))
+				{
+					alert("输入内容必须全为数字，请重新输入");
+				}
+				else
+				{
+					alert("提交成功！");
+				}
+			}
+		}
+	</script>
+</body>
+</html>
