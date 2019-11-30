@@ -1,9 +1,20 @@
+<!DOCTYPE html>
 <!-- 这是一只菜鸡(。-ω-)zzz -->
 <!--(。-ω-)zzz-->
 <!--↑本来这个是名字但是识别不了？-->
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>表单实践</title>
+<!--<script>
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x != "") {
+    alert("提交成功！");
+    return false;
+  }
+}
+</script>-->
 </head>
 <form>
 <table align="center" rules="none">
@@ -12,7 +23,7 @@
 	<tr align="center">
 		<td align="center">
 		<p align="center">
-			姓名<input type="text" name="" maxlength="5"/>
+			姓名：<input type="text" name="fname">
 		</p>
 		</td>
 		</tr>
@@ -20,20 +31,21 @@
 			<td align="center">
 		<p align="center">
 			电话
-			<input type="text" name="" maxlength="11"/>
+			<input type="text" id="telephone" maxlength="11" value=""name="tele" />
 		</p>
+		
 		</td>
 		</tr>
-		<tr align="center">
-			<td align=" center">
+		<tr align="left">
+			<td align="left">
 		<p align="center">
 			E-mail
-			<input type="text" name="" value="@163.com"/>
+			<input type="text" name="E-mail" value="@163.com"/>
 		</p>
 		</td>
 		</tr>
-		<tr align="center">
-			<td align="center">
+		<tr align="left">
+			<td align="left">
 				<p align="center">
 			性别   :
 		       女<input type="radio" name="sex" value="nv"/>
@@ -90,10 +102,24 @@
 		</tr>
 		<tr align="center">
 			<td align="center">
-				<input type="submit" name="tijiao" value="提交"/>
-		<input type="reset" name="chonglai" value="全部重填"/>
+				<input type="submit" name="submit" value="提交" onclick="submit" id="sub">
+		        <input type="reset" name="chonglai" value="全部重填" />
 			</td>
 		</tr>
+		<script type="text/javascript">
+		    sub.onclick=function (submit){
+			 var y = document.getElementById("telephone").value;
+            if(y.length!=11)
+             {
+             alert("请输入十一位电话号码");
+             }
+            else
+            {
+              alert("提交成功！");
+            }
+            }
+	</script>
 </body>
 </table>
 </form>
+</html>
