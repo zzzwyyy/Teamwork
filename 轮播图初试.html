@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>关于我白</title>
+	<style type="text/css">
+		*{
+			margin:0px;
+			padding: 0px;
+		}
+		.banner{
+			width: 1200px;
+			height: 600px;
+			overflow: hidden;
+		}
+		.slide{
+			width: 1200px;
+			height: 600px;
+			margin-left: 180px;
+			position: absolute;
+		}
+		img{
+			width: 1200px;
+			height: 600px;
+		}
+	</style>
+</head>
+<body>
+		<div class="banner" id="banner">
+			<div class="slide">
+				<img src="D:\Js学习\img\img1.jpeg"/>
+			</div>
+			<div class="slide">
+				<img src="D:\Js学习\img\img2.jpeg"/>
+			</div>
+			<div class="slide">
+				<img src="D:\Js学习\img\img3.jpeg"/>
+			</div>
+		</div>
+
+
+	<script type="text/javascript">
+		var timer = null;
+		var index = 0;
+		var pics = document.getElementById("banner").getElementsByTagName('div');
+
+		var i=0 ;
+		while (i<2 ){
+			setTimeout(fun,2000);
+			/*console.log(i);*/
+		}
+		function fun(){
+			i++;
+			console.log(i);
+		}
+
+		/*function slideImg() {
+			banner.onmouseover = function(){
+				stopAutoPlay();
+			}
+			banner.onmouseout = function(){
+				startAutoPlay();
+			}
+		}
+
+		function stopAutoPlay(){
+			if(timer){
+				clearInterval(timer);
+			}
+		}//停止播放
+
+		function startAutoPlay(){
+			timer = setInterval(fun,2000);//计时
+		}//开始播放
+
+		function fun() {
+			index++;
+			if (index>2) {
+				index=0;
+			}
+			changeImg();
+		}
+
+		function changeImg() {
+			for(var i = 0;i<pics.length;i++){
+				pics[i].style.display = "none";
+			}
+			pics[index].style.display = "block";
+		}
+
+		slideImg();*/
+	</script>			
+	</body>
+</html>
